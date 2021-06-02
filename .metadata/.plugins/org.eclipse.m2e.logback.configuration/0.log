@@ -1,0 +1,88 @@
+2021-06-01 07:39:37,874 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-06-01 11:20:13,748 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-06-01 16:00:37,333 [Worker-101: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: onlinebookstore:onlinebookstore:0.0.1-SNAPSHOT @ C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\pom.xml.
+2021-06-01 16:00:43,745 [Worker-101: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:00:43,747 [Worker-101: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-01 16:00:43,753 [Worker-101: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:00:43,755 [Worker-101: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-01 16:01:21,285 [Worker-107: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:01:21,286 [Worker-107: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-01 16:01:21,289 [Worker-107: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:01:21,290 [Worker-107: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-01 16:03:18,649 [Worker-108: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:03:18,650 [Worker-108: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-01 16:03:18,652 [Worker-108: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:03:18,653 [Worker-108: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-01 16:05:03,263 [Worker-109: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:05:03,265 [Worker-109: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-01 16:05:03,267 [Worker-109: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:05:03,268 [Worker-109: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-01 16:08:41,949 [Worker-119: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:08:41,951 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-01 16:08:41,953 [Worker-119: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:08:41,955 [Worker-119: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-01 16:08:41,955 [Worker-119: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of onlinebookstore
+2021-06-01 16:08:41,957 [Worker-119: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for onlinebookstore
+2021-06-01 16:08:42,020 [Worker-119: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:22:14,864 [Worker-126: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: onlinebookstore:onlinebookstore:0.0.1-SNAPSHOT @ C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\pom.xml.
+2021-06-01 16:22:15,664 [Worker-126: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:22:15,665 [Worker-126: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-01 16:22:15,668 [Worker-126: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:22:15,669 [Worker-126: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-01 16:22:15,669 [Worker-126: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of onlinebookstore
+2021-06-01 16:22:15,670 [Worker-126: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for onlinebookstore
+2021-06-01 16:22:15,676 [Worker-126: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:22:17,042 [Worker-125: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:22:17,043 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-01 16:22:17,045 [Worker-125: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:22:17,047 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-01 16:26:56,559 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-06-01 16:29:42,570 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:29:42,572 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-01 16:29:42,575 [Worker-9: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:29:42,576 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-01 16:39:59,698 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:39:59,701 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-01 16:39:59,703 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:39:59,705 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-01 16:41:58,442 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:41:58,444 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-01 16:41:58,446 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:41:58,447 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-01 16:42:07,524 [Worker-17: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:42:07,526 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-01 16:42:07,527 [Worker-17: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:42:07,528 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-01 16:42:39,626 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:42:39,627 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-01 16:42:39,629 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:42:39,630 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-01 16:42:54,068 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:42:54,070 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-01 16:42:54,072 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 16:42:54,073 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-01 20:11:57,833 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-06-01 20:13:21,164 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 20:13:21,168 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-01 20:13:21,175 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 20:13:21,189 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-01 22:57:14,625 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-06-01 23:14:46,141 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 23:14:46,143 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-01 23:14:46,148 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-01 23:14:46,150 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-02 05:49:41,741 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-06-02 05:56:16,401 [Worker-2: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-02 05:56:16,403 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-02 05:56:16,406 [Worker-2: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-02 05:56:16,407 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-02 10:00:55,572 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-06-02 10:05:40,708 [Worker-12: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-02 10:05:40,710 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-02 10:05:40,714 [Worker-12: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-02 10:05:40,715 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources
+2021-06-02 11:11:54,337 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-06-02 11:12:00,366 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-02 11:12:00,369 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\main\resources
+2021-06-02 11:12:00,375 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-06-02 11:12:00,377 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nbanbi94\Desktop\WebJava\New folder\onlinebookstore-J2EE\src\test\resources

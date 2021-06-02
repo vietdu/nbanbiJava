@@ -1,0 +1,47 @@
+0000000000000000000000000000000000000000 06fc494cc346f7c64bf290a7c4505ae51269d110 viet du <du.nguyenviet@hcmut.edu.vn> 1621285297 -0700	clone: from https://github.com/vietdu/nbanbi.git
+06fc494cc346f7c64bf290a7c4505ae51269d110 b219c381510481bb5c126c27e5483d0b6c2eaee9 viet du <du.nguyenviet@hcmut.edu.vn> 1621285399 -0700	commit: dua web len
+b219c381510481bb5c126c27e5483d0b6c2eaee9 16cee04d525830dfaecfce6d9abeb68bf54d94a1 viet du <du.nguyenviet@hcmut.edu.vn> 1621285877 -0700	commit: sua lai it
+16cee04d525830dfaecfce6d9abeb68bf54d94a1 9ad66d60d3cb14b836cf97d2a74d3dec1bc1fb68 viet du <du.nguyenviet@hcmut.edu.vn> 1621286546 -0700	commit: hoàn thiện rồi nhưng sửa chính tả:v
+9ad66d60d3cb14b836cf97d2a74d3dec1bc1fb68 5247d76aec9e0907c43b01fc1adadb74bf67fef7 viet du <du.nguyenviet@hcmut.edu.vn> 1621286888 -0700	commit: sủa lại chổ mobi
+5247d76aec9e0907c43b01fc1adadb74bf67fef7 bf3692133a4aa35d9008b900ad52752909e7f0fe viet du <du.nguyenviet@hcmut.edu.vn> 1621287011 -0700	commit: sửa lại chổ menu 360 pixel để phù hợp với iphone 6 :v
+bf3692133a4aa35d9008b900ad52752909e7f0fe 8771b5cd674902dfedb06abf3105b69197cb2b14 viet du <du.nguyenviet@hcmut.edu.vn> 1621287215 -0700	commit: bỏ overflow menu khi ở điện thoại
+8771b5cd674902dfedb06abf3105b69197cb2b14 bdea6e0e99c69a7308509d07f8a9f537c54053ba viet du <du.nguyenviet@hcmut.edu.vn> 1621287404 -0700	commit: không ổn lắm
+bdea6e0e99c69a7308509d07f8a9f537c54053ba c7ce2007e749ab8e465770f5dcab1ad83004777d viet du <du.nguyenviet@hcmut.edu.vn> 1621287588 -0700	commit: hiden overlow y mobi
+c7ce2007e749ab8e465770f5dcab1ad83004777d 2fa53241c878915a323087b3684de81b7225bd49 viet du <du.nguyenviet@hcmut.edu.vn> 1621288089 -0700	commit: hiden overlow-x html
+2fa53241c878915a323087b3684de81b7225bd49 9745122bb6b1dc00d75efb49c2b1aab2871b409d viet du <du.nguyenviet@hcmut.edu.vn> 1621291881 -0700	commit: sửa lại lỗi mobi và thay đổi kiểu mobi cho cánh máy bay
+9745122bb6b1dc00d75efb49c2b1aab2871b409d dcdbf569e29e6940bad532c2c09781b20e47e866 viet du <du.nguyenviet@hcmut.edu.vn> 1621292739 -0700	commit: sửa lỗi bị tràn thanh trong trình duyệt mobi
+dcdbf569e29e6940bad532c2c09781b20e47e866 162a4f355c09d0c0eab85acb2eb7446eb93b567c viet du <du.nguyenviet@hcmut.edu.vn> 1621293937 -0700	commit: sua loi tran man hinh cua nav__menu
+162a4f355c09d0c0eab85acb2eb7446eb93b567c c4a903391a7a9212dc9d7eda5779efcba5862f47 viet du <du.nguyenviet@hcmut.edu.vn> 1621306111 -0700	commit: thêm hover cho banner2 ,3 và dulich
+c4a903391a7a9212dc9d7eda5779efcba5862f47 8a7c607f0afae3ca8f0651321b8b2c778e59ec7e viet du <du.nguyenviet@hcmut.edu.vn> 1621309131 -0700	commit: sua lai
+8a7c607f0afae3ca8f0651321b8b2c778e59ec7e c93165edfa8812cac678c66b63c965c2a777f6bb viet du <du.nguyenviet@hcmut.edu.vn> 1621356158 -0700	commit: làm lại phần mobi loại bỏ hiu ứng hover vì không cần thiêt
+c93165edfa8812cac678c66b63c965c2a777f6bb fb6a387bf4a8bb6fc2813598a1f8e45adb6ccc26 viet du <du.nguyenviet@hcmut.edu.vn> 1621410373 +0700	commit: một sự sáng tạo mới, tạo ra một menu tìm kiếm hoàn chỉnh và đẹp mắt
+fb6a387bf4a8bb6fc2813598a1f8e45adb6ccc26 a447dcc425f38672feef79a03249f36726e10093 viet du <du.nguyenviet@hcmut.edu.vn> 1621410874 +0700	commit: sua lai ti:
+a447dcc425f38672feef79a03249f36726e10093 8674b5a280ada75037c14a29f421a93544a515dc viet du <du.nguyenviet@hcmut.edu.vn> 1621417978 +0700	commit: sửa lại thông tin khách sạn
+8674b5a280ada75037c14a29f421a93544a515dc 76753bd71d3319a802b8c2baaa95cadac624985e viet du <du.nguyenviet@hcmut.edu.vn> 1621430140 +0700	commit: thêm thanh toán
+76753bd71d3319a802b8c2baaa95cadac624985e 3377f553ea088b0987f7d9abacf6c3ad32361286 viet du <du.nguyenviet@hcmut.edu.vn> 1621440150 +0700	commit: chỉ cần thêm khách sạn nữa là coi nhưu bài này xong rồi nha
+3377f553ea088b0987f7d9abacf6c3ad32361286 0affb072007e9667e4265a0f77dcc989332e1be6 viet du <du.nguyenviet@hcmut.edu.vn> 1621443821 +0700	commit: sửa lại menu tìm chuyến bay và thêm thanh toán cho hotel
+0affb072007e9667e4265a0f77dcc989332e1be6 cbfc01690d466662ad0e80385b3d8db7a1e19d0b viet du <du.nguyenviet@hcmut.edu.vn> 1621472322 +0700	commit: thêm phần thanh toán momo
+cbfc01690d466662ad0e80385b3d8db7a1e19d0b 89bee18d77f8b3855c3accd8d359c50aaa1d0e76 viet du <du.nguyenviet@hcmut.edu.vn> 1621481838 +0700	commit: làm lại backgoud ngầu hơn
+89bee18d77f8b3855c3accd8d359c50aaa1d0e76 357b4f8c48084d408d351e77559c5bdef84e15ed viet du <du.nguyenviet@hcmut.edu.vn> 1621485981 +0700	commit: sửa lại lỗi laptop độ phân giải thấp
+357b4f8c48084d408d351e77559c5bdef84e15ed 2dfc32f582bb52951a84df643cb98814fb2f1953 viet du <du.nguyenviet@hcmut.edu.vn> 1621486494 +0700	commit: padding lai top bannerx
+2dfc32f582bb52951a84df643cb98814fb2f1953 e5bf3008cc1716d9df79eb276e3893551745a55a viet du <du.nguyenviet@hcmut.edu.vn> 1621489832 +0700	commit: sửa lại mây
+e5bf3008cc1716d9df79eb276e3893551745a55a 551b7d755d99e71c44f049f45bb0535672a6be98 viet du <du.nguyenviet@hcmut.edu.vn> 1621513333 +0700	commit: bỏ một đám mây và sửa lại ảnh hotel
+551b7d755d99e71c44f049f45bb0535672a6be98 7d84a1570d9216e942ba68b471603a1623745290 viet du <du.nguyenviet@hcmut.edu.vn> 1621521177 +0700	commit: thêm các logo bài này coi như hoàn thành
+7d84a1570d9216e942ba68b471603a1623745290 9bc333740dcc9c297457db2fcb7b1fb4a27bdb4b viet du <du.nguyenviet@hcmut.edu.vn> 1621577885 +0700	commit: vậy là hoàn thành, đã sửa phần khách sạn olala
+9bc333740dcc9c297457db2fcb7b1fb4a27bdb4b bb37615ea4300a02022b92118ec22b024412c933 viet du <du.nguyenviet@hcmut.edu.vn> 1621593021 +0700	commit: một trang web đỉnh cao được tạo bởi team pro nhất
+bb37615ea4300a02022b92118ec22b024412c933 549101f008dcb5ca6599f03aac7d464e0ad3dde8 viet du <du.nguyenviet@hcmut.edu.vn> 1621596996 +0700	commit: sua lai ban mobi
+549101f008dcb5ca6599f03aac7d464e0ad3dde8 337e88dd875342b6666394718444a7e786191e14 viet du <du.nguyenviet@hcmut.edu.vn> 1621598446 +0700	commit: sua lai height cho nut buton
+337e88dd875342b6666394718444a7e786191e14 d692b966cb6246adc1f9fee82f44271c6b77c17c viet du <du.nguyenviet@hcmut.edu.vn> 1621598467 +0700	commit: sua lai height cho nut button tim kiem khach san
+d692b966cb6246adc1f9fee82f44271c6b77c17c 4e174cdda38cc0a13d60f18103be36d4d8c6c6a4 viet du <du.nguyenviet@hcmut.edu.vn> 1621602089 +0700	commit: loi mobi do phan giai thap
+4e174cdda38cc0a13d60f18103be36d4d8c6c6a4 1337c590ff4dd1fef94d9ce4de4f040cb1865a8d viet du <du.nguyenviet@hcmut.edu.vn> 1621605727 +0700	commit: lai nao
+1337c590ff4dd1fef94d9ce4de4f040cb1865a8d 0b5c29b45a36d9da6f8a14619a421e6c95447f1d viet du <du.nguyenviet@hcmut.edu.vn> 1621608485 +0700	commit: chan nan
+0b5c29b45a36d9da6f8a14619a421e6c95447f1d b1edacf4f87cbc5c81934cf32768ff12a28f4296 viet du <du.nguyenviet@hcmut.edu.vn> 1621609515 +0700	commit: sua loi mobi miết
+b1edacf4f87cbc5c81934cf32768ff12a28f4296 e5f7ecb12d4bbe11b786e4a8106a9689b2e27477 viet du <du.nguyenviet@hcmut.edu.vn> 1621610198 +0700	commit: lại sửa mobi cho iphone 6s, why why why
+e5f7ecb12d4bbe11b786e4a8106a9689b2e27477 827316da45c313c62ba9dfa5cd1749b1ca26f7ea viet du <du.nguyenviet@hcmut.edu.vn> 1621611750 +0700	commit: lại sửa chổ đt
+827316da45c313c62ba9dfa5cd1749b1ca26f7ea 8676df0f1bf5d242630e61c5ca60e1a5a7044965 viet du <du.nguyenviet@hcmut.edu.vn> 1621611926 +0700	commit: sửa lại cái icon tìm kiếm
+8676df0f1bf5d242630e61c5ca60e1a5a7044965 b319c5c87c33e6f0f41a24ab6da0a1f950920fc9 viet du <du.nguyenviet@hcmut.edu.vn> 1621656529 +0700	commit: hoàn thành 100%
+b319c5c87c33e6f0f41a24ab6da0a1f950920fc9 d4fb3a73b1e802fbc1cc8afa977693393b74dc83 viet du <du.nguyenviet@hcmut.edu.vn> 1621659623 +0700	commit: sua lai laptop man hinh hd
+d4fb3a73b1e802fbc1cc8afa977693393b74dc83 b0e65d141334d7766787bc45669bb3f4d07aa8a5 viet du <du.nguyenviet@hcmut.edu.vn> 1622306890 +0700	commit: sua doi lon
+b0e65d141334d7766787bc45669bb3f4d07aa8a5 f26ea913e59321eb371609c13ebab2a684eb1e1d viet du <du.nguyenviet@hcmut.edu.vn> 1622390328 +0700	commit: thay doi lon
+f26ea913e59321eb371609c13ebab2a684eb1e1d b2a8d8a98002efc1e5758fa7bc8f61cb0455ae67 viet du <du.nguyenviet@hcmut.edu.vn> 1622393381 +0700	commit: sửa lại tí màu
+b2a8d8a98002efc1e5758fa7bc8f61cb0455ae67 b6020309a208957c524907b550868f107bc9031a viet du <du.nguyenviet@hcmut.edu.vn> 1622459417 +0700	commit: viet du pro qua

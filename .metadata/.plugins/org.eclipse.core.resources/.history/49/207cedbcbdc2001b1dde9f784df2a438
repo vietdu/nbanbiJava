@@ -1,0 +1,57 @@
+package servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet(urlPatterns = {"/dungu"})
+public class testhuxem extends HttpServlet {
+	private String ten;
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		resp.setContentType("text/html");
+		this.ten = req.getParameter("ten");
+		System.out.println(ten);
+		PrintWriter pw = resp.getWriter();
+		pw.println("vietdu");
+		try {
+			Connection con = DBConnection.getCon();
+		
+			PreparedStatement ps = con.prepareStatement("Select * from books");
+			ResultSet rs = ps.executeQuery();
+			pw.println("vietdupro");
+
+			while(rs.next())
+			{
+				
+				String id = rs.getString(1);
+				String hang = rs.getString(2);
+				String chuyenbay = rs.getString(3);
+				String thoigian = rs.getString(4);
+				String gia = rs.getString(5);
+
+				pw.println("<h1>"+id+"</h1>");
+				pw.println("<h1>"+hang+"</h1>");
+				pw.println("<h1>"+chuyenbay+"</h1>");
+				pw.println("<h1>"+thoigian+"</h1>");
+				pw.println("<h1>"+gia+"</h1>");
+			
+			}
+			
+
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+}

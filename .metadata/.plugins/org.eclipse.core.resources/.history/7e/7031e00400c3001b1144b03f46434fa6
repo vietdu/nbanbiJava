@@ -1,0 +1,280 @@
+
+const navMenu = document.getElementById('nav-menu'),
+
+    toggleMenu = document.getElementById('nav-toggle'),
+  
+    dangnhapMenu = document.getElementById('dangnhap-menu'),
+    dangnkyMenu = document.getElementById('dangky-menu'),
+    hienthibay=document.getElementById('tkbay'),
+    hienthithanhtoan=document.getElementById('thanhtoan'),
+
+    closedangnhap=document.getElementById('dangnhap'),
+    closedangnhap1=document.getElementById('dangnhap1'),
+    closetkbay1=document.getElementById('outtkbay1'),
+    closedangnhap2=document.getElementById('dangnhap2'),
+    closedangnhap3=document.getElementById('dangnhap3'),
+  
+ 
+
+ 
+    thoattt=document.getElementById('thoattt'),
+    clickks1=document.getElementById('san1'),
+    clickks2=document.getElementById('san2'),
+    clickks3=document.getElementById('san3'),
+    clickks4=document.getElementById('san4'),
+    clickks5=document.getElementById('san5'),
+    clickks6=document.getElementById('san6')
+   
+
+    thoattt.addEventListener('click', ()=>{
+      hienthithanhtoan.classList.remove('thanhtoanshow')
+   })
+    
+    
+
+
+toggleMenu.addEventListener('click', ()=>{
+   navMenu.classList.toggle('show')
+})
+closedangnhap.addEventListener('click', ()=>{
+  dangnhapMenu.classList.add('showdangnhap')
+  
+})
+closedangnhap1.addEventListener('click', ()=>{
+  
+  dangnhapMenu.classList.remove('showdangnhap')
+})
+closedangnhap2.addEventListener('click', ()=>{
+  dangnhapMenu.classList.toggle('andangnhap'),
+  dangnkyMenu.classList.remove('dangky')
+})
+closedangnhap3.addEventListener('click', ()=>{
+  dangnhapMenu.classList.toggle('andangnhap'),
+  dangnkyMenu.classList.add('dangky'),
+  dangnhapMenu.classList.remove('andangnhap')
+})
+
+
+
+closetkbay1.addEventListener('click', ()=>{
+  
+
+  hienthibay.classList.remove('dangky'),
+  hienthibay.classList.remove('andangnhap'),
+  dangnhapMenu.classList.add('showdangnhap')
+  
+  
+})
+
+
+
+
+
+
+var rellax = new Rellax('.parallax');
+const srr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+})
+
+
+document.addEventListener('mousemove', move);
+function move(e){
+    this.querySelectorAll('.vietdu').forEach(layer =>{
+ 
+        const speed =layer.getAttribute('data-speed')
+
+        const x = (-window.innerWidth  -e.pageX*speed)/240
+        const y = (-window.innerWidth  -e.pageY*speed)/120
+
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+    })
+    
+}
+const srr1 = ScrollReveal({
+  origin: 'left',
+  distance: '80px',
+  duration: 2000,
+  reset: this,
+})
+
+srr1.reveal('.form_bn2', {delay: 450})
+
+const srr2 = ScrollReveal({
+  origin: 'right',
+  distance: '80px',
+  duration: 2000,
+  reset: this,
+})
+
+
+srr2.reveal('.form_bn3', {delay: 450})
+
+
+srr.reveal('.about__img', {delay: 500})
+srr.reveal('.about__subtitle', {delay: 350})
+srr.reveal('.about__profession', {delay: 400})
+srr.reveal('.about__text', {delay: 500})
+srr.reveal('.about__social-icon', {delay: 600, interval: 200})
+
+
+window.onscroll = function() {myFunction()};
+
+var header2 = document.getElementById("myheader2");
+var sticky = header2.offsetTop;
+var w = window.innerWidth;
+
+var banner2 = document.getElementById("banner_id2");
+var banner_zom2 = banner2.offsetTop;
+var banner3 = document.getElementById("banner_id3");
+var banner_zom3 = banner3.offsetTop;
+
+
+
+
+
+
+
+
+
+
+
+
+
+srr.reveal('.contact__subtitle', {})
+srr.reveal('.contact__text', {interval: 200})
+srr.reveal('.contact__input', {delay: 400})
+srr.reveal('.contact__button', {delay: 600})
+
+
+
+
+
+gsap.from('.nav__logo', {opacity:0, duration: 3, delay: .7, y: 30, ease:'expo.out'});
+gsap.from('.nav__toggle', {opacity:0, duration: 3, delay: .7, y: 30, ease:'expo.out'});
+gsap.from('.nav__item', {opacity: 0, duration: 3, delay: .7, y: 35, ease:'expo.out', stagger: .2})
+
+
+
+gsap.from('.home__subtitle', {opacity:0, duration: 3, delay: 1.1 , y: 35, ease:'expo.out'});
+
+
+gsap.from('.home__scroll', {opacity:0, duration: 3, delay: 1.5, y: 25, ease:'expo.out'});
+
+
+const sr = ScrollReveal({
+    duration: 2500,
+    reset: true
+});
+
+sr.reveal('.section__data',{origin: 'left',distance: '70px'}); 
+
+sr.reveal('.section__img',{origin: 'left',distance: '90px',delay: 200}); 
+
+function myFunction1() {
+  document.getElementById("Booking").style.display = "flex";
+  
+  location.href = "#Booking";
+}
+
+function myFunction2() {
+ 
+  
+  navMenu.classList.add('show')
+  
+}
+function myFunction3() {
+  
+  location.href = "#Booking";
+}
+function myFunction4() {
+  
+  location.href = "#bannerkhachsan";
+}
+function myFunctiontk(){
+  location.href = "#bannerkhachsan"
+}
+
+$(document).ready(function() {
+
+
+
+  if ($('.bbb_deals_slider').length) {
+  var bbb_dealsSlider = $('.bbb_deals_slider');
+  bbb_dealsSlider.owlCarousel({
+  items: 1,
+  loop: false,
+  navClass: ['bbb_deals_slider_prev', 'bbb_deals_slider_next'],
+  nav: false,
+  dots: false,
+  smartSpeed: 1200,
+  margin: 30,
+  autoplay: false,
+  autoplayTimeout: 5000
+  });
+  
+  if ($('.bbb_deals_slider_prev').length) {
+  var prev = $('.bbb_deals_slider_prev');
+  prev.on('click', function() {
+  bbb_dealsSlider.trigger('prev.owl.carousel');
+  });
+  }
+  
+  if ($('.bbb_deals_slider_next').length) {
+  var next = $('.bbb_deals_slider_next');
+  next.on('click', function() {
+  bbb_dealsSlider.trigger('next.owl.carousel');
+  });
+  }
+  }
+  
+  
+  
+  
+  if ($('.bbb_deals_timer_box').length) {
+  var timers = $('.bbb_deals_timer_box');
+  timers.each(function() {
+  var timer = $(this);
+  
+  var targetTime;
+  var target_date;
+  
+  if (timer.data('target-time') !== "") {
+  targetTime = timer.data('target-time');
+  target_date = new Date(targetTime).getTime();
+  } else {
+  var date = new Date();
+  date.setDate(date.getDate() + 2);
+  target_date = date.getTime();
+  }
+  
+  var days, hours, minutes, seconds;
+  
+  var h = timer.find('.bbb_deals_timer_hr');
+  var m = timer.find('.bbb_deals_timer_min');
+  var s = timer.find('.bbb_deals_timer_sec');
+  
+  setInterval(function() {
+  
+  var current_date = new Date().getTime();
+  var seconds_left = (target_date - current_date) / 1000;
+  console.log(seconds_left);
+  
+  days = parseInt(seconds_left / 86400);
+  seconds_left = seconds_left % 86400;
+  
+  hours = parseInt(seconds_left / 3600);
+  hours = hours + days * 24;
+  seconds_left = seconds_left % 3600;
+  
+  
+  minutes = parseInt(seconds_left / 60);
+  seconds = parseInt(seconds_left % 60);
+  
+  if (hours.toString().length < 2) { hours="0" + hours; } if (minutes.toString().length < 2) { minutes="0" + minutes; } if (seconds.toString().length < 2) { seconds="0" + seconds; } }); }); } });
+
+
+
+

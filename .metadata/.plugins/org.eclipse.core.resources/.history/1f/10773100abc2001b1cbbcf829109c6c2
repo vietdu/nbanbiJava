@@ -1,0 +1,23 @@
+package nv.nbb;
+
+import java.sql.*;
+import java.util.ResourceBundle;
+
+import database.database;
+
+public class connectdata {
+	   public static ResultSet getResultSet(String query)throws Exception{
+	        Class.forName("com.mysql.jdbc.Driver");
+	        Connection con=DriverManager.getConnection("jdbc:mysql://localhost/duich","root","");
+	        Statement stmt=con.createStatement();
+	        ResultSet rs=stmt.executeQuery(query);
+	        return rs;
+	    }
+	    public static int setData(String query)throws Exception{
+	        Class.forName("com.mysql.jdbc.Driver");
+	        Connection con=DriverManager.getConnection("jdbc:mysql://localhost/duich","root","");
+	        Statement stmt=con.createStatement();
+	        int n=stmt.executeUpdate(query);
+	        return n;
+	    }
+}

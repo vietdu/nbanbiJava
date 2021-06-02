@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GLoser</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="icon" href="anh/logo.png" sizes="16x16" type="png"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+
+var images = ["anh/kiquan1.jpg", "anh/kiquan2.jpg", "anh/kiquan3.jpg", "anh/kiquan5.jpg",];
+  $(function () {
+      var i = 0;
+      $("#dvImage").css("background-image", "url(" + images[i] + ")");
+      setInterval(function () {
+          i++;
+          if (i == images.length) {
+              i = 0;
+          }
+          $("#dvImage").fadeOut("slow", function () {
+              $(this).css("background-image", "url(" + images[i] + ")");
+              $(this).fadeIn("slow");
+          });
+      }, 20000);
+  });
+           
+        $(document).ready(function(){
+            $('#myCarousel').carousel({
+interval: 6000,
+});
+          $("#ha11").click(function(){
+            $("#ha1").attr("src", "anh/haian1.jpg");
+          });
+          $("#ha12").click(function(){
+            $("#ha1").attr("src", "anh/haian2.jpg");
+          });
+          $("#ha13").click(function(){
+            $("#ha1").attr("src", "anh/haian3.jpg");
+          });
+          $("#ha21").click(function(){
+            $("#ha2").attr("src", "anh/haian1.jpg");
+          });
+          $("#ha22").click(function(){
+            $("#ha2").attr("src", "anh/haian2.jpg");
+          });
+          $("#ha23").click(function(){
+            $("#ha2").attr("src", "anh/haian3.jpg");
+          });
+          $("#ha31").click(function(){
+            $("#ha3").attr("src", "anh/haian1.jpg");
+          });
+          $("#ha32").click(function(){
+            $("#ha3").attr("src", "anh/haian2.jpg");
+          });
+          $("#ha33").click(function(){
+            $("#ha3").attr("src", "anh/haian3.jpg");
+          });
+          $("#ha41").click(function(){
+            $("#ha4").attr("src", "anh/haian1.jpg");
+          });
+          $("#ha42").click(function(){
+            $("#ha4").attr("src", "anh/haian2.jpg");
+          });
+          $("#ha43").click(function(){
+            $("#ha4").attr("src", "anh/haian3.jpg");
+          });
+          $("#ha51").click(function(){
+            $("#ha5").attr("src", "anh/haian1.jpg");
+          });
+          $("#ha52").click(function(){
+            $("#ha5").attr("src", "anh/haian2.jpg");
+          });
+          $("#ha53").click(function(){
+            $("#ha5").attr("src", "anh/haian3.jpg");
+          });
+          $("#ha61").click(function(){
+            $("#ha6").attr("src", "anh/haian1.jpg");
+          });
+          $("#ha62").click(function(){
+            $("#ha6").attr("src", "anh/haian2.jpg");
+          });
+          $("#ha63").click(function(){
+            $("#ha6").attr("src", "anh/haian3.jpg");
+          });
+          
+        });
+        </script>
+  
+
+    </head>
+
+        <body>
+
+        <header class="l-header">
+            <nav class="nav bd-grid">
+   
+                <div>
+                    <a href="#" class="nav__logo"><i class='bx bx-home-circle'></i></i></a>
+                </div>
+                <div class="thongbao" >
+                 <a style="text-decoration: none" href="#bannerkhachsan" class="nav__link active"><i class='bx bx-home-circle'></i> Khách sạn</a>
+                   <a  style="text-decoration: none" href="#Booking" class="nav__link dancach"><i class='bx bxs-plane' ></i> Chuyến bay</a>
+                    
+                    <a style="text-decoration: none" href="#yasuo" class="nav__link"><i class='bx bx-heart-circle'></i> Ưu đãi</a>
+            </div>
+
+        
+            <div class="main-search-input-wrap"   >
+                <div class="main-search-input fl-wrap ">
+                    <div > <input type="text" value="" placeholder="Địa điểm..."  class="nuttk"> </div> 
+                    <button  onclick="myFunctiontk()" class="main-search-button "><i class='bx bx-search-alt'style="font-size:28px;color: rgb(38, 0, 255);"></i> </button>
+                </div>
+            </div>
+    
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-customize'></i>
+                   
+                </div>
+                
+
+                <div class="nav__menu" id="nav-menu">
+                 
+                     <div style="text-align: center;cursor: pointer; ">
+                  
+               
+
+                
+                        <a style="text-decoration: none ;"  class="nav__link" id="dangnhap1"><i class='bx bx-user'></i> Tài khoản</a>
+                        <a style="text-decoration: none"  class="nav__link dancach1 " id="outtkbay1" ><i class='bx bxs-plane-alt'></i> Chuyến bay</a>
+                        <a style="text-decoration: none"  href="#bannerkhachsan" class="nav__link" id="dangnhap1" ><i class='bx bx-clinic'></i> Khách sạn</a>
+       
+                    
+                </div>
+                
+   
+                <form action="" class="form dangky" id="dangky-menu">
+                    
+                    <div class="form__out">
+                        <br>                       
+                     </div>
+                    <div class="form__div">
+                    
+                        <input type="text" class="form__input" placeholder=" ">
+                        <label for="" class="form__label">Email</label>
+                    </div>
+                    <div class="form__div">
+                        <input type="text" class="form__input" placeholder=" ">
+                        <label for="" class="form__label">Số điện thoại</label>
+                    </div>
+                    <div class="form__div">
+                        <input type="text" class="form__input" placeholder=" ">
+                        <label for="" class="form__label">Tên ID</label>
+                    </div>
+    
+                    <div class="form__div">
+                        <input type="password" class="form__input" placeholder=" ">
+                        <label for="" class="form__label">Mật khẩu</label>
+                    </div>
+    
+                  
+                    <a style="cursor: pointer;font-size: 28px;color:#10505b;padding-left: 6px;" id="dangnhap3">  <i class='bx bx-user-check'></i></i></a> 
+                    </form>
+                    <form class="form1 dangnhapwi showdangnhap"  id="dangnhap-menu" >
+                        <div class="container">
+                            <div class="row">
+                                <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                                    <div class="panel border bg-white">
+                                        <div class="panel-heading">
+                                            <h3 class="pt-3 font-weight-bold">Đăng nhập</h3>
+                                        </div>
+                                        <div class="panel-body p-3">
+                                            <form action="login_script.php" method="POST">
+                                                <div class="form-group py-2">
+                                                    <div class="input-field"> <span class="far fa-user p-2"></span> <input type="text" placeholder="Tên hoặc email" required> </div>
+                                                </div>
+                                                <div class="form-group py-1 pb-2">
+                                                    <div class="input-field"> <span class="fas fa-lock px-2"></span> <input type="password" placeholder="Nhập mật khẩu" required> <button class="btn bg-white text-muted"> <span class="far fa-eye-slash"></span> </button> </div>
+                                                </div>
+                                                <div class="form-inline"> <input type="checkbox" name="remember" id="remember"> <label for="remember" class="text-muted">Nhớ mật khẩu</label> <a href="#" id="forgot" class="font-weight-bold">Quên mật khẩu?</a> </div>
+                                                <div class="btn btn-primary btn-block mt-3" id="dangnhap">Đăng nhập</div>
+                                                <div class="text-center pt-4 text-muted">Bạn chưa có tài khoản? <a href="#" id="dangnhap2">Đăng ký</a> </div>
+                                            </form>
+                                        </div>
+                                        <div class="mx-3 my-2 py-2 bordert">
+                                            <div class="text-center py-3"> <a href="https://wwww.facebook.com" target="_blank" class="px-2"> <img src="anh/fb.png" alt=""> </a> <a href="https://www.google.com" target="_blank" class="px-2"> <img src="anh/google.png" alt=""> </a> <a href="https://www.github.com" target="_blank" class="px-2"> <img src="anh/github.png" alt=""> </a> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+         
+  
+                    <form class="tkbay" id='tkbay' >
+                        <div>
+                           <br>                    
+                         </div>
+
+                        <div class="the shadow mb-5 bg-white rounded">
+                            <div class="the-body">
+                                <p class="the-title text-center shadow mb-5 rounded" style="background-color: #2f3569;">Tìm chyến bay</p>
+                                <div class="icons text-center">
+                                    <i class='bx bxs-plane ' style="color:#c1c9da;font-size: 30px;"></i>
+                                <hr>
+                              
+                                <div class="row mb-3 mt-3">  <label class="radiobtn" style="color:#10505b"><input type="checkbox" name="gender" value="male" style="color:#10505b">Khứ hồi</label> </div>
+                                <div class="row">
+                                    <div class="col-sm-6" > <select class="browser-default custom-select mb-4" id="select" required style="color:#10505b">
+                                            <option value="" disabled="" selected="" style="color:#10505b">Gas đi</option>
+                                            <option value="1" style="color:#777a80">Đà Nẵng</option>
+                                            <option value="2" style="color:#777a80">Hà Nội</option>
+                                            <option value="3" style="color:#777a80">Sài Gòn</option>
+                                        </select> </div>
+                                    <div class="col-sm-6"> <select class="browser-default custom-select mb-4" id="select" required style="color:#10505b">
+                                            <option value="" disabled="" selected="" style="color:#10505b" >Gas đến</option>
+                                            <option value="1" style="color:#777a80">Đà Nẵng</option>
+                                            <option value="2" style="color:#777a80">Hà Nội</option>
+                                            <option value="3" style="color:#777a80">Sài Gòn</option>
+                                        </select> </div>
+                                </div>
+                                <div class="row" >
+                                    <div class="col-sm-6" style="color:#10505b"> <input  type="date"  placeholder="mm/dd/yyyy" class="form-control datepicker"  style="font-family:Arial, FontAwesome; color:#10505b"> </div>
+                                    <div class="col-sm-6" style="color:#10505b"> <input type="date"  placeholder="mm/dd/yyyy" class="form-control datepicker"  style="font-family:Arial, FontAwesome; color:#10505b"> </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-sm-6"> <select class="browser-default custom-select mb-4" id="select" style="color:#10505b">
+                                            <option value="" disabled="" selected="" color:#777a80>Thời gian</option>
+                                            <option value="1" style="color:#10505b">4:00 AM</option>
+                                            <option value="2"style="color:#10505b">3:00 PM</option>
+                                            <option value="3" style="color:#10505b">8:00 PM</option>
+                                        </select> </div>
+                                    <div class="col-sm-6"> <select class="browser-default custom-select mb-4" id="select" style="color:#10505b">
+                                            <option value="" disabled="" selected="" color:#777a80>Thời gian</option>
+                                            <option value="1" style="color:#10505b">4:00 AM</option>
+                                            <option value="2" style="color:#10505b">4:00 PM</option>
+                                            <option value="3" style="color:#10505b">10:00 PM</option>
+                                        </select> </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4"> <select class="browser-default custom-select mb-4" id="select" style="color:#10505b">
+                                            <option value="" disabled="" selected="">Trẻ(0-14)</option>
+                                            <option value="1">0</option>
+                                            <option value="2">1</option>
+                                            <option value="3">2</option>
+                                            <option value="3">3</option>
+                                        </select> </div>
+                                    <div class="col-sm-4"> <select class="browser-default custom-select mb-4" id="select" style="color:#10505b">
+                                            <option value="" disabled="" selected="">Lớn(15-60)</option>
+                                            <option value="1">0</option>
+                                            <option value="2">1</option>
+                                            <option value="3">2</option>
+                                            <option value="3">3</option>
+                                        </select> </div>
+                                    <div class="col-sm-4"> <select class="browser-default custom-select mb-4" id="select" style="color:#10505b">
+                                            <option value="" disabled="" selected="">Già(>60)</option>
+                                            <option value="1">0</option>
+                                            <option value="2">1</option>
+                                            <option value="3">2</option>
+                                            <option value="3">3</option>
+                                        </select> </div>
+                                </div> <button   class="btn btn-primary float-bottom mt-5" onclick="myFunction1()" style="margin-bottom: 5px;margin-top: -10px;">Tìm kiếm</button>
+                            
+                            </div>
+                  
+               
+
+                    </form>
+   
+                
+                   
+  
+                
+            </nav>
+
+            <nav1>
+                <form>
+                    <div class="thanhtoan" id="thanhtoan">
+                        <div class="container d-flex justify-content-center mt-5">
+                            <div class="card">
+                                <div>
+                                    <div class="d-flex pt-3 pl-3">
+                                        <div type="margin-left:10px"><img src="anh/qr.png" width="100" height="100" style=" border-radius: 4px"/></div>
+                                        <div class="mt-3 pl-2"><span class="name">Du Quan Vu</span>
+                                            <div><span class="cross">XXXX-XXXX-</span><span class="pin ml-2">3007</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2 px-3">
+                                        <div class="first pl-2 d-flex py-2">
+                                            <div class="form-check"> <input type="radio" name="optradio" class="form-check-input mt-3 dot" checked> </div>
+                                            <div class="border-left pl-2"><span class="head">Tổng tiền trả</span>
+                                                <div><span class="tien">VNĐ</span><span class="amount">1.575.000</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2 px-3">
+                                        <div class="second pl-2 d-flex py-2">
+                                            <div class="form-check"> <input type="checkbox" name="optradio" class="form-check-input mt-3 dot"> </div>
+                                            <div class="border-left pl-2"><span class="head">số cmnd</span>
+                                                <div class="d-flex"><span class="tien">CMND</span><input type="text" name="text" class="form-control ml-1" placeholder="0"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between px-3 pt-4 pb-3">
+                                        <div><span class="back" style="cursor: pointer;" id="thoattt">Thoát</span></div> <button type="button" class="btn btn-primary button">Thanh toán</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+
+
+            </nav1>
+        </header>
+
+    
+            <main>
+                <div class="home" style="background-color: #3ba8e0;">
+                    <div class="parallax home__parallax home__parallax-img1 nen" data-rellax-speed="-19" id='dvImage' >
+                        
+                    </div>
+                    <div class="parallax home__parallax home__parallax-img2 may1" data-rellax-speed="-17" ></div>
+                    <div class="parallax home__parallax home__parallax-img3 may2" data-rellax-speed="-15.5" ></div>
+                 
+                    <div class="parallax home__parallax home__parallax-img4 may3" data-rellax-speed="-13" >
+                       
+                    </div>
+                    <div class="parallax home__parallax home__parallax-img5 maybay" data-rellax-speed="-10" >
+                     
+                       
+
+                    </div>
+            
+                    <div class="tencty">
+                
+
+                    <h1 class="parallax home__title headerx" data-rellax-speed="-9"  >Gooolloser </h1>
+                   
+                </div >
+                    
+    
+
+                </div>
+
+
+                                          <section class="container contact section header2" id="Booking" >
+                                           
+                                              
+                                              <div class=" bd-grid " id="myheader2">
+                                            <div class="wrapper bg-white " >
+                                                <form action="#">
+                                              
+                                                    <div class="d-sm-flex margin border-bottom" >
+                                                        
+                                                        
+                                                        <div class="d-flex p-2 align-items-center flex-fill ms-sm-1 my-sm-0 my-1   position-relative"> 
+                                                        </div>
+                                                        <div>
+                                                            <img src="anh/maybay.png" alt="" class="vietdu" data-speed=3>
+                                                            
+                                                        </div>
+                                                        <div class="d-flex p-2 align-items-center flex-fill ms-sm-1 my-sm-0 my-1  position-relative "> 
+                                                        </div>
+                                                      
+                                                   
+                                                   
+                                                    <div class="form-group my-2 ">
+                                            
+                                                        <button type="button" class="btn  d-flex justify-content-center text-center  p-3 search" onclick="myFunction2()"  ><i class='bx bx-search-alt-2 search' style="font-size: 50px;"></i></button>          </div>                                            
+                                                    </form>
+                                                  
+                                            </div>
+                                        </div>
+        
+                                        <div class="container bannery  banner1 " id="banner_id1" >
+  
+                                            
+                                            <div class="quan">
+                                            
+                                                <div class="grid wide container thequan" >
+                                                          <div class="prolayer-fly "  style="margin-top: 2%;">
+                                                         <div class="prolayer3">              
+                                                         <img src="anh/slide.jpg" width="40" height="10" alt="">
+                                                        </div>
+                                                        <div class="block-content">
+                                                        <div class="prolay-full" style="display: flex;">
+                                                        <div class="prolayze"  id="bay" title="8:40 AM on SAT, MAY 29 ">
+                                                            <b>8:40 PM - 9:55 PM</b><br>
+                                                            <p>Vietjet Air~FlexFlight</p>
+                                                        </div>
+                                                        <div class="list-fly">
+                                                            <h6 style="color: #79b18a;">1hr 15 min</h6>
+                                                            <p>SGN-DAD</p>
+                                                        </div>
+                                                        <div class="list-skyline">
+                                                            <h6 style="color: #79b18a;">&nbsp;&nbsp;&nbsp;Nonstop</h6>
+                                                        </div>
+                                                        <div class="list-money">
+                                                            <h6 style="color: #79b18a;">₫1.505.000 </h6>
+                                                            <p>round trip</p>
+                                                        </div>
+                                                    </div>
+                                                          <div class="content-sp" style="display: none;">
+                                                            <div class="content">
+                                                                      <p>SGN-DAD</p>
+                                                                      <p>round trip</p>
+                                                            </div>
+                                                            <div class="content">
+                                                                <h6 style="color: #79b18a;">&nbsp;&nbsp;&nbsp;Nonstop</h6>
+                                                                  <h6 style="color: #79b18a;">1hr 15 min</h6>
+                                                                  <p>Vietjet Air~FlexFlight</p>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                            
+                                                        </div>
+                            
+                                                        </div>
+                                                    
+                                                   <br>
+                                                   <div class="grid wide container thequan">
+                                                    <div class="prolayer-fly " >
+                                                   <div class="prolayer3">              
+                                                   <img src="anh/slidep.png" width="40" height="10" alt="">
+                                                  </div>
+                                                  <div class="block-content">
+                                              <div class="prolay-full" style="display: flex;">
+                                                  <div class="prolayze"  id="bay1"   title="8:40 AM on SAT, MAY 29 ">
+                                                      <b>4:35 PM - 5:55 PM</b><br>
+                                                      <p>Vietnam Airline</p>
+                                                  </div>
+                                                  <div class="list-fly">
+                                                      <h6 style="color: #79b18a;">1hr 20 min</h6>
+                                                      <p>SGN-DAD</p>
+                                                  </div>
+                                                  <div class="list-skyline">
+                                                      <h6 style="color: #79b18a;">&nbsp;&nbsp;Nonstop</h6>
+                                                  </div>
+                                                  <div class="list-money">
+                                                      <h6 style="color: #79b18a;">₫2.505.000 </h6>
+                                                      <p>round trip</p>
+                                                  </div>
+                                              </div>
+                                              <div class="content-sp" style="display: none;">
+                                                <div class="content">
+                                                          <p>SGN-DAD</p>
+                                                          <p>round trip</p>
+                                                </div>
+                                                <div class="content">
+                                                    <h6 style="color: #79b18a;">&nbsp;&nbsp;&nbsp;Nonstop</h6>
+                                                      <h6 style="color: #79b18a;">1hr 20 min</h6>
+                                                      <p>Vietnam Airline</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                                  </div>
+                                                  </div>
+                                              
+                                             <br>
+                                             <div class="grid wide container thequan">
+                                                <div class="prolayer-fly " >
+                                               <div class="prolayer3">              
+                                               <img src="anh/slidepr.png" width="40" height="10" alt="">
+                                              </div>
+                                              <div class="block-content">
+                                          <div class="prolay-full" style="display: flex;">
+                                              <div class="prolayze"  id="bay2"  title="8:40 AM on SAT, MAY 29 ">
+                                                  <b>7:40 AM - 9:05 AM</b><br>
+                                                  <p>Bamboo Airways</p>
+                                              </div>
+                                              <div class="list-fly">
+                                                  <h6 style="color: #79b18a;">1hr 25 min</h6>
+                                                  <p>SGN-DAD</p>
+                                              </div>
+                                              <div class="list-skyline">
+                                                  <h6 style="color: #79b18a;">&nbsp;Nonstop</h6>
+                                              </div>
+                                              <div class="list-money">
+                                                  <h6 style="color: #79b18a;">₫1.575.000 </h6>
+                                                  <p>round trip</p>
+                                              </div>
+                                          </div>
+                                           <div class="content-sp" style="display: none;">
+                                                <div class="content">
+                                                          <p>SGN-DAD</p>
+                                                          <p>round trip</p>
+                                                </div>
+                                                <div class="content">
+                                                    <h6 style="color: #79b18a;">&nbsp;&nbsp;&nbsp;Nonstop</h6>
+                                                      <h6 style="color: #79b18a;">1hr 25 min</h6>
+                                                      <p>Bamboo Airways</p>
+                                                </div>
+                                              </div>
+                                          </div>
+                                              </div>
+                                              </div>
+                                          
+                                         <br>
+                                         <div class="grid wide container thequan">
+                                            <div class="prolayer-fly" >
+                                           <div class="prolayer3">              
+                                           <img src="anh/slidepro.png" width="40" height="10" alt="">
+                                          </div>
+                                          <div class="block-content">
+                                      <div class="prolay-full" style="display: flex;">
+                                          <div class="prolayze"  id="bay3"   title="8:40 AM on SAT, MAY 29 ">
+                                              <b>7:40 PM - 9:55 PM</b><br>
+                                              <p>VECA</p>
+                                          </div>
+                                          <div class="list-fly">
+                                              <h6 style="color: #79b18a;">1hr 15 min</h6>
+                                              <p>SGN-DAD</p>
+                                          </div>
+                                          <div class="list-skyline">
+                                              <h6 style="color: #79b18a;">&nbsp;&nbsp;Nonstop</h6>
+                                          </div>
+                                          <div class="list-money">
+                                              <h6 style="color: #79b18a;">₫1.505.000 </h6>
+                                              <p>round trip</p>
+                                          </div>
+                                      </div>
+                                       <div class="content-sp" style="display: none;">
+                                                <div class="content">
+                                                          <p>SGN-DAD</p>
+                                                          <p>round trip</p>
+                                                </div>
+                                                <div class="content">
+                                                    <h6 style="color: #79b18a;">&nbsp;&nbsp;&nbsp;Nonstop</h6>
+                                                      <h6 style="color: #79b18a;">1hr 15 min</h6>
+                                                      <p>VECA</p>
+                                                </div>
+                                              </div>
+                                      </div>
+                                          </div>
+                                          </div>
+                                      
+                                     <br>
+                                     
+                                  
+                                 
+                                 <div class="grid wide container thequan">
+                                    <div class="prolayer-fly" >
+                                   <div class="prolayer3">              
+                                   <img src="anh/slidep.png" width="40" height="10" alt="">
+                                  </div>
+                                  <div class="block-content">
+                              <div class="prolay-full" style="display: flex;">
+                                  <div class="prolayze"  id="bay4"   title="8:40 AM on SAT, MAY 29 ">
+                                      <b>8:30 PM - 9:55 PM</b><br>
+                                      <p>Vietnam Airline</p>
+                                  </div>
+                                  <div class="list-fly">
+                                      <h6 style="color: #79b18a;">1hr 25 min</h6>
+                                      <p>SGN-DAD</p>
+                                  </div>
+                                  <div class="list-skyline">
+                                      <h6 style="color: #79b18a;">&nbsp;Nonstop</h6>
+                                  </div>
+                                  <div class="list-money">
+                                      <h6 style="color: #79b18a;">₫2.235.000 </h6>
+                                      <p>round trip</p>
+                                  </div>
+                              </div>
+                               <div class="content-sp" style="display: none;">
+                                                <div class="content">
+                                                          <p>SGN-DAD</p>
+                                                          <p>round trip</p>
+                                                </div>
+                                                <div class="content">
+                                                    <h6 style="color: #79b18a;">&nbsp;&nbsp;&nbsp;Nonstop</h6>
+                                                      <h6 style="color: #79b18a;">1hr 25 min</h6>
+                                                      <p>Vietnam Airline</p>
+                                                </div>
+                                              </div>
+                              </div>
+                                  </div>
+                                  </div>
+                              
+                                                    <br>
+                                                    <div class="grid wide container thequan">
+                                                    <div class="prolayer-fly" >
+                                                   <div class="prolayer3">              
+                                                   <img src="anh/slidepr.png" width="40" height="10" alt="">
+                                                   </div>
+                                                   <div class="block-content">
+                                                   <div class="prolay-full" style="display: flex;">
+                                                   <div class="prolayze"  id="bay5" title="8:40 AM on SAT, MAY 29 ">
+                                                      <b>2:05 AM - 3:25 AM</b><br>
+                                                      <p>Bamboo Airways</p>
+                                                   </div>
+                                                   <div class="list-fly">
+                                                      <h6 style="color: #79b18a;">1hr 25 min</h6>
+                                                      <p>SGN-DAD</p>
+                                                   </div>
+                                                   <div class="list-skyline">
+                                                      <h6 style="color: #79b18a;">Nonstop</h6>
+                                                   </div>
+                                                   <div class="list-money">
+                                                      <h6 style="color: #79b18a;">₫1.500.000 </h6>
+                                                      <p>round trip</p>
+                                                   </div>
+                                                   </div>
+                                                    <div class="content-sp" style="display: none;">
+                                                <div class="content">
+                                                          <p>SGN-DAD</p>
+                                                          <p>round trip</p>
+                                                </div>
+                                                <div class="content">
+                                                    <h6 style="color: #79b18a;">&nbsp;&nbsp;&nbsp;Nonstop</h6>
+                                                      <h6 style="color: #79b18a;">1hr 20 min</h6>
+                                                      <p>Bamboo Airways</p>
+                                                </div>
+                                              </div>
+                                                   </div>
+                                                   </div>
+                                                   </div>
+                            
+                                                   <br>                  
+                                                   <div class="grid wide container thequan">
+                                                    <div class="prolayer-fly" >
+                                                   <div class="prolayer3">              
+                                                   <img src="anh/slide.jpg" width="40" height="10" alt="">
+                                                  </div>
+                                                  <div class="block-content">
+                                              <div class="prolay-full" style="display: flex;">
+                                                  <div class="prolayze"  id="bay6" title="8:40 AM on SAT, MAY 29 ">
+                                                      <b>8:10 PM - 9:25 PM</b><br>
+                                                      <p>Vietjet Air~FlexFlight</p>
+                                                  </div>
+                                                  <div class="list-fly">
+                                                      <h6 style="color: #79b18a;">1hr 15 min</h6>
+                                                      <p>SGN-DAD</p>
+                                                  </div>
+                                                  <div class="list-skyline">
+                                                      <h6 style="color: #79b18a;">&nbsp;Nonstop</h6>
+                                                  </div>
+                                                  <div class="list-money">
+                                                      <h6 style="color: #79b18a;">₫2.340.000 </h6>
+                                                      <p>round trip</p>
+                                                  </div>
+                                              </div>
+                                               <div class="content-sp" style="display: none;">
+                                                <div class="content">
+                                                          <p>SGN-DAD</p>
+                                                          <p>round trip</p>
+                                                </div>
+                                                <div class="content">
+                                                    <h6 style="color: #79b18a;">&nbsp;&nbsp;&nbsp;Nonstop</h6>
+                                                      <h6 style="color: #79b18a;">1hr 15 min</h6>
+                                                      <p>Vietjet Air~FlexFlight</p>
+                                                </div>
+                                              </div>
+                                              </div>
+                                                  </div>
+                                                  </div>
+                                                  </div>
+                                              
+                                                  <div class="baydai">
+                                                      <h3 style="color: #d5d6d8;">....<i class='bx bx-chevrons-down' style="font-size: 20px;" ></i>....</h3>
+                                                  </div>
+                                    
+                            
+                                                  
+                                          
+                                               
+                                                    
+                                              
+                                                
+                                                
+                                                
+                                                      
+                                                </div>
+                                                
+                    
+
+
+              
+
+                                        </section>
+
+        
+       
+     
+            <section class="yasuo" id="yasuo">
+                <br>
+                
+            </section>
+
+            <section class="container   banner3 "  >
+                <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="mask flex-center">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-7 col-12 order-md-1 order-2">
+             
+                                            <h4>Giảm 20% vé</h4>
+                                            <p>Cho lần mua tiếp theo trong vào 1 tháng gần nhất</p> <br> <a href="#Booking">ĐẶT NGAY</a>
+                                        </div>
+                                        <div class="col-md-5 col-12 order-md-2 order-1"><img src="anh/sale1.png"class="mx-auto" alt="slide"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="mask flex-center">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-7 col-12 order-md-1 order-2">
+                                            <h4>Combo du lịch</h4>
+                                            <p>Đặt ngay khu nghĩ dưỡng cao cấp kèm những mức giá hấp dẫn.</p> <br> <a href="#bannerkhachsan">ĐẶT NGAY</a>
+                                        </div>
+                                        <div class="col-md-5 col-12 order-md-2 order-1"><img src="anh/sale1.png" class="mx-auto" alt="slide"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only"></span> </a> <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only"></span> </a>
+                </div>
+            </section>
+            
+           
+         
+        
+            <section class="container  bannerx" id ="bannerkhachsan" >
+                <div class="container px-4  ">
+                    <div class="row gx-2 ">
+                      <div class="col hihi ">
+                       <div class="p-1 border dulich bg-light ">
+
+                        <div class="row  " >
+                            <div class="col-sm anhdulich ">
+                                <div class="container d-flex justify-content-center">
+                                    <div class="card p-2 my-4"> <img src="anh/haian1.jpg" height="560" id="ha1">
+                                        <div class="text-white">
+                                            <h4 style="color:aliceblue">HAIAN Beach Hotel & Spa</h4>
+                                        </div>
+                                        <div class="text-muted">
+                                            <p style="color:aliceblue">278 Vo Nguyen Giap Street Ngu Hanh Son District, Da Nang 550000 Vietnam</p>
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-between align-items-center">
+                                             <span  id="ha11">
+                                                <hr class="first"></span>
+                                                <span id="ha12">
+                                                <hr ></span>
+                                                <span id="ha13">
+                                                <hr ></span>
+                                             </div> <button type="button" class="btn btn-primary mt-3 mb-1" id="san1" ><span>300.000 vnđ/h </span></button>
+                                    </div>
+                                </div>
+                           
+                              </div>
+                              
+
+                         
+                     
+            
+                    </div>
+
+
+                       </div>
+                      </div>
+                      <div class="col hihi">
+                        <div class="p-1 border dulich bg-light">
+ 
+                         <div class="row " >
+                             <div class="col-sm anhdulich ">
+                                 <div class="container d-flex justify-content-center">
+                                     <div class="card p-2 my-4"> <img src="anh/haian1.jpg" height="560" id="ha2">
+                                         <div class="text-white">
+                                             <h4 style="color:aliceblue">HAIAN Beach Hotel & Spa</h4>
+                                         </div>
+                                         <div class="text-muted">
+                                             <p style="color:aliceblue">278 Vo Nguyen Giap Street Ngu Hanh Son District, Da Nang 550000 Vietnam</p>
+                                         </div>
+                                         <div class="d-flex flex-row justify-content-between align-items-center"> 
+                                             <span id="ha21">
+                                                 <hr class="first"></span>
+                                                 <span id="ha22">
+                                                 <hr></span>
+                                                 <span id="ha23">
+                                                 <hr></span>
+                                                 </div> <button type="button" class="btn btn-primary mt-3 mb-1" id="san2"><span>300.000 vnđ/h </span></button>
+                                     </div>
+                                 </div>
+                            
+                               </div>
+                               
+ 
+                          
+                      
+             
+                     </div>
+ 
+ 
+                        </div>
+                       </div>
+                      <div class="col"  >
+                        <div class="col hihi">
+                            <div class="p-1 border dulich bg-light">
+     
+                             <div class="row" >
+                                 <div class="col-sm anhdulich">
+                                     <div class="container d-flex justify-content-center ">
+                                         <div class="card p-2 my-4"> <img src="anh/haian1.jpg" height="560" id="ha3">
+                                             <div class="text-white">
+                                                 <h4 style="color:aliceblue">HAIAN Beach Hotel & Spa</h4>
+                                             </div>
+                                             <div class="text-muted">
+                                                 <p style="color:aliceblue">278 Vo Nguyen Giap Street Ngu Hanh Son District, Da Nang 550000 Vietnam</p>
+                                             </div>
+                                             <div class="d-flex flex-row justify-content-between align-items-center">
+                                                  <span id="ha31">
+                                                     <hr class="first"></span>
+                                                     <span id="ha32">
+                                                     <hr></span>
+                                                     <span id="ha33">
+                                                     <hr></span> 
+                                                    </div> <button type="button" class="btn btn-primary mt-3 mb-1" id="san3"><span>300.000 vnđ/h </span></button>
+                                         </div>
+                                     </div>
+                                
+                                   </div>
+                                   
+     
+                              
+                          
+                 
+                         </div>
+     
+     
+                            </div>
+                           </div>
+                    </div>
+                    <div class="col hihi">
+                        <div class="p-1 border dulich bg-light">
+ 
+                         <div class="row " >
+                             <div class="col-sm anhdulich">
+                                 <div class="container d-flex justify-content-center ">
+                                     <div class="card p-2 my-4"> <img src="anh/haian1.jpg" height="560" id="ha4">
+                                         <div class="text-white">
+                                             <h4 style="color:aliceblue">HAIAN Beach Hotel & Spa</h4>
+                                         </div>
+                                         <div class="text-muted">
+                                             <p style="color:aliceblue">278 Vo Nguyen Giap Street Ngu Hanh Son District, Da Nang 550000 Vietnam</p>
+                                         </div>
+                                         <div class="d-flex flex-row justify-content-between align-items-center"> 
+                                             <span id="ha41">
+                                                 <hr class="first"></span>
+                                                 <span id="ha42">
+                                                 <hr class="first"></span>
+                                                 <span id="ha43">
+                                                 <hr class="first"></span> 
+                                             </div>
+                                              <button type="button" class="btn btn-primary mt-3 mb-1" id="san4"><span>300.000 vnđ/h </span></button>
+                                              </div>
+                                 </div>
+                            
+                               </div>
+                               
+ 
+                          
+                      
+             
+                     </div>
+ 
+ 
+                        </div>
+                       </div>
+                       <div class="col hihi">
+                         <div class="p-1 border dulich bg-light">
+  
+                          <div class="row" >
+                              <div class="col-sm anhdulich ">
+                                  <div class="container d-flex justify-content-center">
+                                      <div class="card p-2 my-4"> <img src="anh/haian1.jpg" height="560" id="ha5">
+                                          <div class="text-white">
+                                              <h4 style="color:aliceblue">HAIAN Beach Hotel & Spa</h4>
+                                          </div>
+                                          <div class="text-muted">
+                                              <p style="color:aliceblue">278 Vo Nguyen Giap Street Ngu Hanh Son District, Da Nang 550000 Vietnam</p>
+                                          </div>
+                                          <div class="d-flex flex-row justify-content-between align-items-center"> <span>
+                                                  <hr class="first"id="ha51" ></span>
+                                                  <span id="ha52">
+                                                  <hr></span>
+                                                  <span id="ha53">
+                                                  <hr></span> 
+                                                </div> <button type="button" class="btn btn-primary mt-3 mb-1" id="san5"><span>300.000 vnđ/h </span></button>
+                                      </div>
+                                  </div>
+                             
+                                </div>
+                                
+  
+                           
+                       
+              
+                      </div>
+  
+  
+                         </div>
+                        </div>
+                       <div class="col hihi"  >
+                         <div class="col">
+                             <div class="p-1 border dulich bg-light">
+      
+                              <div class="row" >
+                                  <div class="col-sm anhdulich">
+                                      <div class="container d-flex justify-content-center">
+                                          <div class="card p-2 my-4"> <img src="anh/haian1.jpg" height="560" id="ha6">
+                                              <div class="text-white">
+                                                  <h4 style="color:aliceblue">HAIAN Beach Hotel & Spa</h4>
+                                              </div>
+                                              <div class="text-muted">
+                                                  <p style="color:aliceblue">278 Vo Nguyen Giap Street Ngu Hanh Son District, Da Nang 550000 Vietnam</p>
+                                              </div>
+                                              <div class="d-flex flex-row justify-content-between align-items-center"> 
+                                                  <span>
+                                                      <hr class="first" id="ha61"></span>
+                                                      <span id="ha62">
+                                                      <hr></span>
+                                                      <span id="ha63">
+                                                      <hr></span> 
+                                                    </div> <button type="button" class="btn btn-primary mt-3 mb-1" id="san6"><span>300.000 vnđ/h </span></button>
+                                          </div>
+                                      </div>
+                                 
+                                    </div>
+                                    
+      
+                               
+                           
+                  
+                          </div>
+      
+      
+                             </div>
+                            </div>
+                     </div>
+                    
+                  </div>
+            </section>
+            <section class="container  bannerx ketiep"  >
+            <div>    <i class='bx bx-chevron-left-circle' ></i> <i class='bx bxs-circle' ></i> <i class='bx bx-chevron-right-circle' ></i> </div>
+            </section>
+
+
+            <section class="yasuo1"  >
+
+                <div class="chungtoi" id="about">
+                    <h2 class="about__subtitle">We're Team Good Loser</h2>
+                    <span class="about__profession">Best Web Design-2021</span>
+    
+                    <p class="about__text">Sản phẩm được tạo ra bởi team Gloser Đại Học CNTT & TT Việt Hàn </p>
+                    <p class="about__text"> Tất cả hình ảnh trong bài làm đều được lấy ở pexel.com là một trang web hoàn toàn miễn phí sử dụng ảnh ảnh </p>
+                    <p class="about__text">Các công nghệ sử dụng trong trang web bao gồm #rellax.js #bootstrap5 #scrollreveal.js #jQuery.js  trang web được thực hiện để người dùng dễ dàng đưa nội dung lên web</p>
+       
+                    <p class="about__text">Hãy thử ấn    nút    tìm    kiếm    chuyến    bay    nếu    bạn    chưa    ấn   -   -   cảm    ơn    đã    xem    bài    mọi    thắc    mắt    xin    gửi    về    nvdu.20it6@vku.udn.vn"</p>
+
+
+                    <div class="about__social">
+                        <a href="https://github.com/vietdu/nbanbi" class="about__social-icon" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://github.com/vietdu/nbanbi" class="about__social-icon" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://github.com/vietdu/nbanbi" class="about__social-icon" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+
+            </section>
+
+    
+           
+    
+            <script src="assets/js/rellax.min.js"></script>
+    
+           
+    
+            <script src="assets/js/scrollreveal.js"></script>
+
+            <script src="assets/js/main.js"></script>
+
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>       
+   
+
+    </body>
+</html>
