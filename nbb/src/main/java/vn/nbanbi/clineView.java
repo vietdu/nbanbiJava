@@ -22,9 +22,10 @@ public class clineView  extends HttpServlet{
 	String htmlks;
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+		resp.setContentType("text/html;charset=UTF-8");
+		req.setCharacterEncoding("utf-8");
 		
-		resp.setContentType("text/html");
+		
 		
 		String gadi,gaden,diadiem;
 		String duongbay;
@@ -46,7 +47,7 @@ public class clineView  extends HttpServlet{
 		
 		PrintWriter pw= resp.getWriter();
 		pw.println("<!DOCTYPE html>\r\n"
-				+ "<html lang='vn'>\r\n"
+				+ "<html lang='vi'>\r\n"
 				+ "    <head>\r\n"
 				+ "        <meta charset='UTF-8'>\r\n"
 				+ "        <meta name='viewport' content='width=device-width, initial-scale=1.0'>\r\n"
@@ -130,9 +131,9 @@ public class clineView  extends HttpServlet{
 				+ "               \r\n"
 				+ "\r\n"
 				+ "                \r\n"
-				+ "                        <a style='text-decoration: none ;'  class='nav__link' id='dangnhap1'><i class='bx bx-user'></i> Tài khoản</a>\r\n"
-				+ "                        <a style='text-decoration: none'  class='nav__link dancach1 ' id='outtkbay1' ><i class='bx bxs-plane-alt'></i> Chuyến bay</a>\r\n"
-				+ "                        <a style='text-decoration: none'  href='#bannerkhachsan' class='nav__link' id='dangnhap1' ><i class='bx bx-clinic'></i> Khách sạn</a>\r\n"
+				+ "                        <a style='text-decoration: none ;color:#2f3569;'  class='' id='dangnhap1'><i class='bx bx-user font-weight-bold'></i> Tài khoản</a>\r\n"
+				+ "                        <a style='text-decoration: none;color:#2f3569'  class='dancach1 ' id='outtkbay1' ><i class='bx bxs-plane-alt font-weight-bold'></i> Chuyến bay</a>\r\n"
+				+ "                        <a style='text-decoration: none;color:#2f3569'  href='#bannerkhachsan'  id='dangnhap1' ><i class='bx bx-clinic font-weight-bold'></i> Khách sạn</a>\r\n"
 				+ "       \r\n"
 				+ "                    \r\n"
 				+ "                </div>\r\n"
@@ -411,10 +412,10 @@ public class clineView  extends HttpServlet{
 				+ "                                    <div class='row align-items-center'>\r\n"
 				+ "                                        <div class='col-md-7 col-12 order-md-1 order-2'>\r\n"
 				+ "             \r\n"
-				+ "                                            <h4>Giảm 20% vé</h4>\r\n"
-				+ "                                            <p>Cho lần mua tiếp theo trong vào 1 tháng gần nhất</p> <br> <a href='#Booking'>ĐẶT NGAY</a>\r\n"
+				+ "                                            <h4>Mùa Hè</h4>\r\n"
+				+ "                                            <p>Chúng tôi sẽ đồng hành cùng gia đình bạn</p> <br> <a href='#Booking'>ĐẶT NGAY</a>\r\n"
 				+ "                                        </div>\r\n"
-				+ "                                        <div class='col-md-5 col-12 order-md-2 order-1'><img src='anh/sale1.png'class='mx-auto' alt='slide'></div>\r\n"
+				+ "                                        <div class='col-md-5 col-12 order-md-2 order-1'><img src='anh/bannerhe.png'class='mx-auto' alt='slide'></div>\r\n"
 				+ "                                    </div>\r\n"
 				+ "                                </div>\r\n"
 				+ "                            </div>\r\n"
