@@ -30,7 +30,7 @@ public class clineView  extends HttpServlet{
 		String duongbay;
 		gadi=req.getParameter("gadi");
 		gaden= req.getParameter("gaden");
-		diadiem=req.getParameter("timdiadiem");
+		diadiem=req.getParameter("diadiem");
 		System.out.println(diadiem);
 		
 		duongbay= gadi+"-"+gaden;
@@ -41,7 +41,7 @@ public class clineView  extends HttpServlet{
 		htmlBay=chuyenbay.getHtmlBay();
 		htmlBanner htmlBan = new htmlBanner();
 		htmlbn = htmlBan.getHtmlBanner();
-		htmlKhachsan htmlksan = new htmlKhachsan(diadiem);
+		htmlKhachsan htmlksan = new htmlKhachsan("sai");
 		htmlks =htmlksan.getHtmlKhachsan();
 		
 		PrintWriter pw= resp.getWriter();

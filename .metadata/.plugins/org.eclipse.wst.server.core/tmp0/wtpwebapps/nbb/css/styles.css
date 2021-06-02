@@ -1256,6 +1256,10 @@ input:focus {
   box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.3)
 }
 @media screen and (max-width: 1500px) {
+	.diadiem{
+
+    margin-right:150px;
+  }
   .fl-wrap {
     float: left;
     width: 230%;
@@ -1279,6 +1283,10 @@ input:focus {
 }
 
 @media screen and (min-width: 1500px) {
+	.diadiem{
+
+    margin-right:150px;
+  }
   .fl-wrap {
     float: left;
     width: 290%;
@@ -1298,6 +1306,10 @@ input:focus {
 }
 
 @media screen and (max-width: 700px) {
+	.diadiem{
+
+    margin-right:0px;
+  }
   .home__title{
     font-size: 38px;
   

@@ -30,7 +30,7 @@ public class clineView  extends HttpServlet{
 		String duongbay;
 		gadi=req.getParameter("gadi");
 		gaden= req.getParameter("gaden");
-		diadiem=req.getParameter("timdiadiem");
+		diadiem=req.getParameter("diadiem");
 		System.out.println(diadiem);
 		
 		duongbay= gadi+"-"+gaden;
@@ -41,7 +41,7 @@ public class clineView  extends HttpServlet{
 		htmlBay=chuyenbay.getHtmlBay();
 		htmlBanner htmlBan = new htmlBanner();
 		htmlbn = htmlBan.getHtmlBanner();
-		htmlKhachsan htmlksan = new htmlKhachsan(diadiem);
+		htmlKhachsan htmlksan = new htmlKhachsan("sai");
 		htmlks =htmlksan.getHtmlKhachsan();
 		
 		PrintWriter pw= resp.getWriter();
@@ -111,8 +111,8 @@ public class clineView  extends HttpServlet{
 				+ "        <form action ='trangchu#bannerkhachsan' class='diadiem'>\r\n"
 				+ "            <div class='main-search-input-wrap'   >\r\n"
 				+ "                <div class='main-search-input fl-wrap '>\r\n"
-				+ "                    <div > <input type='text' value='' name='timdiadiem' placeholder='Địa điểm...'  class='nuttk'> </div> \r\n"
-				+ "                    <button  class='main-search-button '><i class='bx bx-search-alt'style='font-size:28px;color: rgb(38, 0, 255);'></i> </button>\r\n"
+				+ "                    <div > <input type='text' value='' placeholder='Địa điểm...'  class='nuttk'> </div> \r\n"
+				+ "                    <button  onclick='myFunctiontk()' class='main-search-button '><i class='bx bx-search-alt'style='font-size:28px;color: rgb(38, 0, 255);'></i> </button>\r\n"
 				+ "                </div>\r\n"
 				+ "            </div>\r\n"
 				+ "        </form>"
@@ -842,7 +842,7 @@ public class clineView  extends HttpServlet{
 				+ "            <div class='main-search-input-wrap'   >\r\n"
 				+ "                <div class='main-search-input fl-wrap '>\r\n"
 				+ "                    <div > <input type='text' value='' name='timdiadiem' placeholder='Địa điểm...'  class='nuttk'> </div> \r\n"
-				+ "                    <button  class='main-search-button '><i class='bx bx-search-alt'style='font-size:28px;color: rgb(38, 0, 255);'></i> </button>\r\n"
+				+ "                    <button  onclick='myFunctiontk()' class='main-search-button '><i class='bx bx-search-alt'style='font-size:28px;color: rgb(38, 0, 255);'></i> </button>\r\n"
 				+ "                </div>\r\n"
 				+ "            </div>\r\n"
 				+ "        </form>"
