@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="getT"/>
+		<item key="selection" value="value"/>
 		<list key="findhistory">
-			<item value="getT"/>
-			<item value="tài khoản"/>
-			<item value=" btn-block mt-3&apos; id=&apos;dangnhap3&apos;"/>
-			<item value="form dangky"/>
-			<item value="dangky.java"/>
-			<item value="nbb/dangky.java"/>
-			<item value="&lt;label for=&apos;&apos; class=&apos;form__label&apos;&gt;Email&lt;/label&gt;\r\n&quot;"/>
-			<item value="class=&apos;form__input&apos; placeholder=&apos; &apos;&gt;\r\n&quot;"/>
-			<item value="trangchu#Booking"/>
-			<item value="trangchu#"/>
-			<item value="mkdangky"/>
-			<item value="dangnhap"/>
-			<item value="dangnhap3"/>
-			<item value="1500px"/>
-			<item value="form1"/>
+			<item value="value"/>
+			<item value="bay"/>
+			<item value="chuyến bay"/>
+			<item value="ten"/>
+			<item value="id"/>
+			<item value="đăng ký"/>
+			<item value="VNĐ"/>
+			<item value="VN"/>
+			<item value="vnd"/>
+			<item value="Tổng tiền trả"/>
+			<item value="jQtt"/>
+			<item value="thoattt=document.getElement"/>
+			<item value="getElementById(&apos;thoattt&apos;)"/>
+			<item value="ocument.getElementById(&apos;dangnhap3&apos;)"/>
+			<item value="getElementById(&apos;thanhtoan&apos;)"/>
 		</list>
 		<list key="replacehistory">
 		</list>

@@ -14,7 +14,6 @@
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="vn.nbb.quanly.htmlChuyenbay"/>
     <fullyQualifiedTypeName name="vn.nbb.quanly.htmlBanner"/>
-    <fullyQualifiedTypeName name="vn.nbb.quanly.htmlKhachsan"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="vn.nbb.quanly.htmlThongbao"/>
     <fullyQualifiedTypeName name="vn.nbb.quanly.htmlTen"/>
@@ -22,4 +21,5 @@
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="vn.nbb.quanly.htmlKhachsan"/>
 </qualifiedTypeNameHistroy>
