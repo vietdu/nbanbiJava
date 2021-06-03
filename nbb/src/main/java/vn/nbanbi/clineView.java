@@ -28,6 +28,7 @@ public class clineView  extends HttpServlet{
 	String htmlBay;
 	String htmlbn;
 	String htmlks;
+	String maildn;
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setContentType("text/html;charset=UTF-8");
@@ -38,8 +39,9 @@ public class clineView  extends HttpServlet{
 		String gadi,gaden;
 		String diadiem="da nang";
 		String duongbay;
-		String email ,iddangky,mkdangky;	
+		String email ,iddangky,mkdangky,iddangnhap,mkdangnhap;	
 		String ten="Tài khoản";
+		String tendn;
 		
 		
 		int sdt=0;
@@ -49,7 +51,8 @@ public class clineView  extends HttpServlet{
 		email=req.getParameter("email");	
 		iddangky=req.getParameter("iddangky");	
 		mkdangky=req.getParameter("mkdangky");
-		
+		iddangnhap=req.getParameter("iddangnhap");
+		mkdangnhap=req.getParameter("mkdangnhap");
 
 		
 		System.out.println(email);
@@ -75,8 +78,17 @@ public class clineView  extends HttpServlet{
 		htmlThongbao dkThongbao = new htmlThongbao(iddangky,email,sdt,mkdangky);
 		htmlTB = dkThongbao.getHtmlThongbao();
 		htmlTen htmlten = new htmlTen(iddangky,mkdangky);
-		ten =htmlten.getTen();
-		if(!ten.equals("Tài khoản")) {
+	
+		htmlTen htmltendn = new htmlTen(iddangnhap,mkdangnhap);
+		
+		if(iddangky !=null) {
+			ten=htmlten.getTen();
+		}
+		if(iddangnhap !=null) {
+			ten=htmltendn.getTen();
+		}
+		
+		if(!ten.equals("Tài khoản") ) {
 			
 			try {
 				Connection con = connectdata.getCon();
@@ -90,15 +102,17 @@ public class clineView  extends HttpServlet{
 				while(rs.next())
 				{
 					String id = rs.getString(1);
-					String mail =rs.getString(2);
+					
 					int sdtt = rs.getInt(3);
 					String mk = rs.getString(4);
+					
 				
 
 					if(id.equals(ten)) {
-
-						Cookie coki = new Cookie("du", id);
-						coki.setMaxAge(1000);
+						String mail =rs.getString(2);
+						this.maildn=mail;
+						Cookie coki = new Cookie("200", id);
+						coki.setMaxAge(100);
 
 						System.out.println("=============================================");
 						System.out.println(coki.getName());
@@ -130,7 +144,89 @@ public class clineView  extends HttpServlet{
 			}
 		}
 		}
+		
+		
+		
+		
+		
 
+		
+		
+		
+		
+		String htmldn="";
+		System.out.println("-----------------=========================---------------");
+		System.out.println(ten);
+		
+		if(ten.equals("Tài khoản")) {
+		
+	htmldn="  <form action='' class='form1 dangnhapwi showdangnhap'  id='dangnhap-menu' >\r\n"
+			+ "                        <div class='container'>\r\n"
+			+ "                            <div class='row'>\r\n"
+			+ "                                <div class='offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3'>\r\n"
+			+ "                                    <div class='panel border bg-white'>\r\n"
+			+ "                                        <div class='panel-heading'>\r\n"
+			+ "                                            <h3 class='pt-3 font-weight-bold'>Đăng nhập</h3>\r\n"
+			+ "                                        </div>\r\n"
+			+ "                                        <div class='panel-body p-3'>\r\n"
+			+ "                                            <form action='login_script.php' method='POST'>\r\n"
+			+ "                                                <div class='form-group py-2'>\r\n"
+			+ "                                                    <div class='input-field'> <span class='far fa-user p-2'></span> <input name='iddangnhap' type='text' placeholder='Tên ID' required> </div>\r\n"
+			+ "                                                </div>\r\n"
+			+ "                                                <div class='form-group py-1 pb-2'>\r\n"
+			+ "                                                    <div class='input-field'> <span class='fas fa-lock px-2'></span> <input name='mkdangnhap' type='password' placeholder='Nhập mật khẩu' required> <button class='btn bg-white text-muted'> <span class='far fa-eye-slash'></span> </button> </div>\r\n"
+			+ "                                                </div>\r\n"
+			+ "                                                <div class='form-inline'> <input type='checkbox' name='remember' id='remember'> <label for='remember' class='text-muted'>Nhớ mật khẩu</label> <a href='#' id='forgot' class='font-weight-bold'>Quên mật khẩu?</a> </div>\r\n"
+			+ "                                                <div class='btn btn-primary btn-block mt-3' id='dangnhap'><button style='background-color:#0d6dfd00;border:none'>Đăng nhập</button></div>\r\n"
+			+ "                                                <div class='text-center pt-4 text-muted'>Bạn chưa có tài khoản? <a href='#' id='dangnhap2'>Đăng ký</a> </div>\r\n"
+			+ "                                            </form>\r\n"
+			+ "                                        </div>\r\n"
+			+ "                                        <div class='mx-3 my-2 py-2 bordert'>\r\n"
+			+ "                                            <div class='text-center py-3'> <a href='https://wwww.facebook.com' target='_blank' class='px-2'> <img src='anh/fb.png' alt=''> </a> <a href='https://www.google.com' target='_blank' class='px-2'> <img src='anh/google.png' alt=''> </a> <a href='https://www.github.com' target='_blank' class='px-2'> <img src='anh/github.png' alt=''> </a> </div>\r\n"
+			+ "                                        </div>\r\n"
+			+ "                                    </div>\r\n"
+			+ "                                </div>\r\n"
+			+ "                            </div>\r\n"
+			+ "                        </div>\r\n"
+			+ "                    </form>";
+		
+		}
+		
+		else {
+			htmldn="                 <form  class='form1 dangnhapwi showdangnhap'  id='dangnhap-menu' >\r\n"
+					+ "                        <div class='container'>\r\n"
+					+ "                            <div class='row'>\r\n"
+					+ "                                <div class='offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3'>\r\n"
+					+ "                                    <div class='panel border bg-white'>\r\n"
+					+ "                                        <div class='panel-heading'>\r\n"
+					+ "                                            <h3 class='pt-3 font-weight-bold' style='color:#000080'>"+ten+"</h3>\r\n"
+					
+					+ "                                        </div>\r\n"
+					+ "                                        <div class='panel-heading'>\r\n"
+					+ "                                            <h5 class='pt-3 font-weight-bold' style='color:#4682B4'>"+this.maildn+"</h5>\r\n"
+					
+					+ "                                        </div>\r\n"
+					+ "                                        <div class='panel-heading'>\r\n"
+					+ "  <img src='anh/giphy.gif' alt='Girl in a jacket' width='240' height='240'>"
+					
+					+ "                                        </div>\r\n"
+					
+					+ "                                        <div class='panel-body p-3'>\r\n"
+					+ "                                            <form action='login_script.php' method='POST'>\r\n"
+					+ "                                             \r\n"
+					+ "                                                <div class='btn btn-primary btn-block mt-3' id='dangnhap' style=\"visibility: hidden;\"><button style='background-color:#0d6dfd00;border:none'>Đăng nhập</button></div>\r\n"
+					+ "                                                <div class='text-center pt-4 text-muted'>Bạn muốn thoát tài khoản? <a href='#' id='dangnhap2'>Đăng ký lại</a> </div>\r\n"
+					+ "                                            </form>\r\n"
+					+ "                                        </div>\r\n"
+					+ "                                        <div class='mx-3 my-2 py-2 '>\r\n"
+					+ "                                            <div class='text-center py-3'> <a href='https://wwww.facebook.com' target='_blank' class='px-2'> <img src='anh/fb.png' alt=''> </a> <a href='https://www.google.com' target='_blank' class='px-2'> <img src='anh/google.png' alt=''> </a> <a href='https://www.github.com' target='_blank' class='px-2'> <img src='anh/github.png' alt=''> </a> </div>\r\n"
+					+ "                                        </div>\r\n"
+					+ "                                    </div>\r\n"
+					+ "                                </div>\r\n"
+					+ "                            </div>\r\n"
+					+ "                        </div>\r\n"
+					+ "                    </form>";
+		}
 
 		
 
@@ -256,35 +352,7 @@ public class clineView  extends HttpServlet{
 				+ "                  \r\n"
 				+ " <button class='btn btn-primary btn-block mt-3' id='dangnhap3' style='width: 240px;'>Đăng ký</button>\r\n"
 				+ "                    </form>\r\n"
-				+ "                    <form   class='form1 dangnhapwi showdangnhap'  id='dangnhap-menu' >\r\n"
-				+ "                        <div class='container'>\r\n"
-				+ "                            <div class='row'>\r\n"
-				+ "                                <div class='offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3'>\r\n"
-				+ "                                    <div class='panel border bg-white'>\r\n"
-				+ "                                        <div class='panel-heading'>\r\n"
-				+ "                                            <h3 class='pt-3 font-weight-bold'>Đăng nhập</h3>\r\n"
-				+ "                                        </div>\r\n"
-				+ "                                        <div class='panel-body p-3'>\r\n"
-				+ "                                            <form action='trangchu' method='POST'>\r\n"
-				+ "                                                <div class='form-group py-2'>\r\n"
-				+ "                                                    <div class='input-field'> <span class='far fa-user p-2'></span> <input type='text' placeholder='Tên hoặc email' required> </div>\r\n"
-				+ "                                                </div>\r\n"
-				+ "                                                <div class='form-group py-1 pb-2'>\r\n"
-				+ "                                                    <div class='input-field'> <span class='fas fa-lock px-2'></span> <input type='password' placeholder='Nhập mật khẩu' required> <button class='btn bg-white text-muted'> <span class='far fa-eye-slash'></span> </button> </div>\r\n"
-				+ "                                                </div>\r\n"
-				+ "                                                <div class='form-inline'> <input type='checkbox' name='remember' id='remember'> <label for='remember' class='text-muted'>Nhớ mật khẩu</label> <a href='#' id='forgot' class='font-weight-bold'>Quên mật khẩu?</a> </div>\r\n"
-				+ "                                                <div class='btn btn-primary btn-block mt-3' id='dangnhap'>Đăng nhập</div>\r\n"
-				+ "                                                <div class='text-center pt-4 text-muted'>Bạn chưa có tài khoản? <a href='#' id='dangnhap2'>Đăng ký</a> </div>\r\n"
-				+ "                                            </form>\r\n"
-				+ "                                        </div>\r\n"
-				+ "                                        <div class='mx-3 my-2 py-2 bordert'>\r\n"
-				+ "                                            <div class='text-center py-3'> <a href='https://wwww.facebook.com' target='_blank' class='px-2'> <img src='anh/fb.png' alt=''> </a> <a href='https://www.google.com' target='_blank' class='px-2'> <img src='anh/google.png' alt=''> </a> <a href='https://www.github.com' target='_blank' class='px-2'> <img src='anh/github.png' alt=''> </a> </div>\r\n"
-				+ "                                        </div>\r\n"
-				+ "                                    </div>\r\n"
-				+ "                                </div>\r\n"
-				+ "                            </div>\r\n"
-				+ "                        </div>\r\n"
-				+ "                    </form>\r\n"
+				+htmldn
 				+ "         \r\n"
 				+ "  \r\n"
 				+ "                    <form method='GET' action ='trangchu#Booking'class='tkbay' id='tkbay'  >\r\n"
