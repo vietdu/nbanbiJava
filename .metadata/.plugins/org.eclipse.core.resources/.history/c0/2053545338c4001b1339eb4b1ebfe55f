@@ -1,0 +1,24 @@
+package vn.nbb.quanly;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import javax.servlet.http.Cookie;
+
+import nv.nbb.connectdata;
+
+public class htmlTen {
+
+	private String iddangky;
+	private String mkdangky;
+	public htmlTen(String iddangky , String mkdangky) {
+		this.iddangky=iddangky;
+		this.mkdangky=mkdangky;
+	}
+	private String htmluser="";
+	public String getTen() {
+	
+	return "Tài khoản";
+}
+}

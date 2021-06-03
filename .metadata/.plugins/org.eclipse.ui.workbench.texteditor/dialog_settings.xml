@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Chuyến bay"/>
+		<item key="selection" value="getT"/>
 		<list key="findhistory">
-			<item value="chuyến bay"/>
-			<item value="--body-font"/>
-			<item value="@import url(&quot;"/>
-			<item value="font-family"/>
-			<item value="font"/>
-			<item value="timdiadiem"/>
-			<item value="địa điểm"/>
-			<item value="giảm"/>
+			<item value="getT"/>
+			<item value="tài khoản"/>
+			<item value=" btn-block mt-3&apos; id=&apos;dangnhap3&apos;"/>
+			<item value="form dangky"/>
+			<item value="dangky.java"/>
+			<item value="nbb/dangky.java"/>
+			<item value="&lt;label for=&apos;&apos; class=&apos;form__label&apos;&gt;Email&lt;/label&gt;\r\n&quot;"/>
+			<item value="class=&apos;form__input&apos; placeholder=&apos; &apos;&gt;\r\n&quot;"/>
+			<item value="trangchu#Booking"/>
+			<item value="trangchu#"/>
+			<item value="mkdangky"/>
+			<item value="dangnhap"/>
+			<item value="dangnhap3"/>
 			<item value="1500px"/>
-			<item value="top: 32%;"/>
-			<item value="home__title{"/>
-			<item value="địa chỉ"/>
-			<item value="thoattt"/>
-			<item value="ha1"/>
-			<item value="htmlks"/>
+			<item value="form1"/>
 		</list>
 		<list key="replacehistory">
 		</list>

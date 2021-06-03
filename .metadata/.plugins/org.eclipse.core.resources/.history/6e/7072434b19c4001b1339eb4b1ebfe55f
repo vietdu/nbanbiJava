@@ -1,0 +1,43 @@
+package vn.nbb.quanly;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import nv.nbb.connectdata;
+
+public class htmlThongbao  {
+	private String iddangky ="o";
+	private String email="o";
+	private int sdt =0;
+	private String mkdangky="o";
+	
+	private String htmlThongbao;
+	public htmlThongbao(String iddangky,String email,int sdt, String mkdangky) {
+		this.iddangky = iddangky;
+		this.email = email;
+		this.sdt = sdt;
+		this.mkdangky=mkdangky;
+
+		try {
+			Connection con = connectdata.getCon();
+		
+			PreparedStatement ps = con.prepareStatement("");
+			ResultSet rs = ps.executeQuery();
+			this.htmlThongbao="alert('Đăng ký thành công');";
+			
+			
+		}
+
+		catch(Exception e)
+		{
+			this.htmlThongbao="alert('Đăng ký không thành công - vui lòng đăng ký lại')";
+			e.printStackTrace();
+		}
+	}
+	public String getHtmlThongbao() {
+		return htmlThongbao;
+	}
+}
+
+
