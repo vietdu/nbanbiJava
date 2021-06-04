@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="value"/>
+		<item key="selection" value="thequan"/>
 		<list key="findhistory">
+			<item value="thequan"/>
 			<item value="value"/>
 			<item value="bay"/>
 			<item value="chuyến bay"/>
@@ -22,7 +23,6 @@
 			<item value="thoattt=document.getElement"/>
 			<item value="getElementById(&apos;thoattt&apos;)"/>
 			<item value="ocument.getElementById(&apos;dangnhap3&apos;)"/>
-			<item value="getElementById(&apos;thanhtoan&apos;)"/>
 		</list>
 		<list key="replacehistory">
 		</list>

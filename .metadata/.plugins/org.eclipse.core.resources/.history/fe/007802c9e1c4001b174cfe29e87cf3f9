@@ -1,0 +1,47 @@
+package vn.nbb.quanly;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import nv.nbb.connectdata;
+
+public class htmlThanhToan  {
+	private String idnguoidung;
+	private String gia;
+	private int cmnd;
+	private String tenks;
+
+	
+	private String htmlThongbao;
+	public htmlThanhToan(String tenks, String idnguoidung,String cmnd, String gia) {
+		this.idnguoidung = idnguoidung;
+		this.gia = gia;
+		this.cmnd = Integer.parseInt(cmnd);
+		this.tenks=tenks;
+	
+		
+		try {
+			Connection con = connectdata.getCon();
+		
+			PreparedStatement ps = con.prepareStatement("INSERT INTO giaodich (tenks, idnguoidung, cmnd, giaks) VALUES ('"+tenks+"', '"+idnguoidung+"', "+cmnd+", '"+gia+"')");
+			System.out.print(ps);
+			int rows = ps.executeUpdate();
+			this.htmlThongbao="alert('Đặt phòng thành công');";
+			
+			
+		}
+
+		catch(Exception e)
+		{
+			this.htmlThongbao="alert('Bạn phải nhập đúng chứng minh nhân dân')";
+			e.printStackTrace();
+		}
+		}
+	
+	public String getHtmlThongbao() {
+		return htmlThongbao;
+	}
+}
+
+

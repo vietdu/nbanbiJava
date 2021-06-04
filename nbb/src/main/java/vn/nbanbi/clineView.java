@@ -19,7 +19,9 @@ import vn.nbb.quanly.htmlBanner;
 import vn.nbb.quanly.htmlChuyenbay;
 import vn.nbb.quanly.htmlKhachsan;
 import vn.nbb.quanly.htmlTen;
+import vn.nbb.quanly.htmlThanhToan;
 import vn.nbb.quanly.htmlThongbao;
+import vn.nbb.quanly.lichsugiaodich;
 
 
 @WebServlet(urlPatterns = {"/trangchu"})
@@ -33,6 +35,9 @@ public class clineView  extends HttpServlet{
 	String htmlbn;
 	String htmlks;
 	String maildn;
+	
+	
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setContentType("text/html;charset=UTF-8");
@@ -47,18 +52,34 @@ public class clineView  extends HttpServlet{
 		String email ,iddangky,mkdangky,iddangnhap,mkdangnhap;	
 		String ten="Tài khoản";
 		String tendn;
+		String tttenks;
+		String giaks;
+		String cmnd;
+		String lsgd;
 		
 		
 		int sdt=0;
 		
 		String htmlTB;
+		String tbtt;
 		
 		email=req.getParameter("email");	
 		iddangky=req.getParameter("iddangky");	
 		mkdangky=req.getParameter("mkdangky");
 		iddangnhap=req.getParameter("iddangnhap");
 		mkdangnhap=req.getParameter("mkdangnhap");
+		
 
+
+		tttenks=req.getParameter("tttenks");
+		giaks=req.getParameter("giaks");
+		cmnd=req.getParameter("cmnd");
+		
+		
+		System.out.println(giaks);
+		System.out.println(tttenks);
+		System.out.print(cmnd);
+		System.out.println(ten);
 		
 		System.out.println(email);
 		System.out.println(sdt);
@@ -96,7 +117,11 @@ public class clineView  extends HttpServlet{
 		System.out.println(jQbay1);
 		System.out.println(jQbay2);
 		htmlThongbao dkThongbao = new htmlThongbao(iddangky,email,sdt,mkdangky);
+		
 		htmlTB = dkThongbao.getHtmlThongbao();
+
+		
+	
 		htmlTen htmlten = new htmlTen(iddangky,mkdangky);
 	
 		htmlTen htmltendn = new htmlTen(iddangnhap,mkdangnhap);
@@ -115,7 +140,7 @@ public class clineView  extends HttpServlet{
 				Connection con = connectdata.getCon();
 			
 				PreparedStatement ps = con.prepareStatement("SELECT * from nguoidung");
-				System.out.println(ps);
+		
 				ResultSet rs = ps.executeQuery();
 				
 				
@@ -170,9 +195,16 @@ public class clineView  extends HttpServlet{
 		
 		
 		
-
+		System.out.println("------------------------------");
+		System.out.println(ten);
+		htmlThanhToan ThanhToan = new htmlThanhToan(tttenks, ten,cmnd, giaks);
+		htmlTB = ThanhToan.getHtmlThongbao();
+		System.out.println("------------------------------");
 		
-		
+		lichsugiaodich lssss = new lichsugiaodich(ten);
+		lsgd = lssss.getHtmlThongbao();
+		System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+		System.out.println(lsgd);
 		
 		
 		String htmldn="";
@@ -236,6 +268,9 @@ public class clineView  extends HttpServlet{
 					+ "                                            <form action='login_script.php' method='POST'>\r\n"
 					+ "                                             \r\n"
 					+ "                                                <div class='btn btn-primary btn-block mt-3' id='dangnhap' style=\"visibility: hidden;\"><button style='background-color:#0d6dfd00;border:none'>Đăng nhập</button></div>\r\n"
+					+"<div class='text-center pt-4 text-muted'>"
+					+lsgd
+					+"</div>"
 					+ "                                                <div class='text-center pt-4 text-muted'>Bạn muốn thoát tài khoản? <a href='#' id='dangnhap2'>Đăng ký lại</a> </div>\r\n"
 					+ "                                            </form>\r\n"
 					+ "                                        </div>\r\n"
@@ -259,7 +294,7 @@ public class clineView  extends HttpServlet{
 				+ "        <meta name='viewport' content='width=device-width, initial-scale=1.0'>\r\n"
 				+ "        <title>GLoser</title>\r\n"
 				+ "\r\n"
-				+ "        <link rel='stylesheet' href='css/styles.css'>\r\n"
+				+ "        <link rel='stylesheet' href='css/styless.css'>\r\n"
 				+ "\r\n"
 				+ "        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>\r\n"
 				+ "        <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>\r\n"
@@ -459,22 +494,24 @@ public class clineView  extends HttpServlet{
 				+ "            </nav>\r\n"
 				+ "\r\n"
 				+ "            <nav1>\r\n"
-				+ "                <form>\r\n"
+				+ "                <form action='#' >\r\n"
 				+ "                    <div class='thanhtoan' id='thanhtoan'>\r\n"
 				+ "                        <div class='container d-flex justify-content-center mt-5'>\r\n"
 				+ "                            <div class='card'>\r\n"
 				+ "                                <div>\r\n"
 				+ "                                    <div class='d-flex pt-3 pl-3'>\r\n"
 				+ "                                        <div type='margin-left:10px'><img src='anh/qr.png' width='100' height='100' style=' border-radius: 4px'/></div>\r\n"
-				+ "                                        <div class='mt-3 pl-2'><span class='name'>Du Quan Vu</span>\r\n"
-				+ "                                            <div><span class='cross'>XXXX-XXXX-</span><span class='pin ml-2'>3007</span></div>\r\n"
+				+ "                                        <div class='mt-3 pl-2'><span class='name' >"+ten+"</span>\r\n"
+				+ "                                            <div><span class='cross'><div class='namett' ></div></span></div>\r\n"
+				+ "												<input type='hidden' name='tttenks' id='tttenks'></input>"
 				+ "                                        </div>\r\n"
 				+ "                                    </div>\r\n"
 				+ "                                    <div class='py-2 px-3'>\r\n"
 				+ "                                        <div class='first pl-2 d-flex py-2'>\r\n"
 				+ "                                            <div class='form-check'> <input type='radio' name='optradio' class='form-check-input mt-3 dot' checked> </div>\r\n"
 				+ "                                            <div class='border-left pl-2'><span class='head'>Tổng tiền trả</span>\r\n"
-				+ "                                                <div><span class='amount'> <div class='resulttt'></div></span></div>\r\n"
+				+ "                                                <div><span class='amount'> <div class='resulttt' ></div></span></div>\r\n"
+				+"												<input type='hidden' name='giaks' id='giaks'></input>"
 				+ "                                            </div>\r\n"
 				+ "                                        </div>\r\n"
 				+ "                                    </div>\r\n"
@@ -482,12 +519,12 @@ public class clineView  extends HttpServlet{
 				+ "                                        <div class='second pl-2 d-flex py-2'>\r\n"
 				+ "                                            <div class='form-check'> <input type='checkbox' name='optradio' class='form-check-input mt-3 dot'> </div>\r\n"
 				+ "                                            <div class='border-left pl-2'><span class='head'>số cmnd</span>\r\n"
-				+ "                                                <div class='d-flex'><span class='tien'>CMND</span><input type='text' name='text' class='form-control ml-1' placeholder='0'></div>\r\n"
+				+ "                                                <div class='d-flex'><span class='tien'>CMND</span><input name='cmnd' type='text'  class='form-control ml-1' placeholder='0'></div>\r\n"
 				+ "                                            </div>\r\n"
 				+ "                                        </div>\r\n"
 				+ "                                    </div>\r\n"
 				+ "                                    <div class='d-flex justify-content-between px-3 pt-4 pb-3'>\r\n"
-				+ "                                        <div><span class='back' style='cursor: pointer;' id='thoattt'>Thoát</span></div> <button type='button' class='btn btn-primary button'>Thanh toán</button>\r\n"
+				+ "                                        <div><span class='back' style='cursor: pointer;' id='thoattt'>Thoát</span></div> <button  class='btn btn-primary button'>Thanh toán</button>\r\n"
 				+ "                                    </div>\r\n"
 				+ "                                </div>\r\n"
 				+ "                            </div>\r\n"

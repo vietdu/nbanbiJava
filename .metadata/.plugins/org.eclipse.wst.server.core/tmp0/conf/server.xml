@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\nbanbi94\Desktop\javapro\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\nbanbi94\Desktop\javapro\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\onlinebookstore" path="/onlinebookstore" reloadable="true" source="org.eclipse.jst.jee.server:onlinebookstore"/><Context docBase="C:\Users\nbanbi94\Desktop\javapro\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\nbb" path="/nbb" reloadable="true" source="org.eclipse.jst.jee.server:nbb"/></Host>
+      <Context docBase="C:\Users\nbanbi94\Desktop\javapro\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\nbanbi94\Desktop\javapro\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\nbb" path="/nbb" reloadable="true" source="org.eclipse.jst.jee.server:nbb"/></Host>
     </Engine>
   </Service>
 </Server>
