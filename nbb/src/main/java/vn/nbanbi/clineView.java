@@ -6,7 +6,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
@@ -35,6 +34,7 @@ public class clineView  extends HttpServlet{
 	String htmlbn;
 	String htmlks;
 	String maildn;
+
 	
 	
 
@@ -61,6 +61,7 @@ public class clineView  extends HttpServlet{
 		int sdt=0;
 		
 		String htmlTB;
+
 		String tbtt;
 		
 		email=req.getParameter("email");	
@@ -197,8 +198,10 @@ public class clineView  extends HttpServlet{
 		
 		System.out.println("------------------------------");
 		System.out.println(ten);
+		if(cmnd!=null) {
 		htmlThanhToan ThanhToan = new htmlThanhToan(tttenks, ten,cmnd, giaks);
 		htmlTB = ThanhToan.getHtmlThongbao();
+		}
 		System.out.println("------------------------------");
 		
 		lichsugiaodich lssss = new lichsugiaodich(ten);
@@ -256,7 +259,7 @@ public class clineView  extends HttpServlet{
 					
 					+ "                                        </div>\r\n"
 					+ "                                        <div class='panel-heading'>\r\n"
-					+ "                                            <h5 class='pt-3 font-weight-bold' style='color:#4682B4'>"+this.maildn+"</h5>\r\n"
+					+ "                                            <h5 class='pt-3 font-weight-bold text-center' style='color:#4682B4'>"+this.maildn+"</h5>\r\n"
 					
 					+ "                                        </div>\r\n"
 					+ "                                        <div class='panel-heading'>\r\n"
@@ -287,14 +290,14 @@ public class clineView  extends HttpServlet{
 		
 
 		PrintWriter pw= resp.getWriter();
-		pw.println("<!DOCTYPE html>\r\n"
+	String html="<!DOCTYPE html>\r\n"
 				+ "<html lang='vi'>\r\n"
 				+ "    <head>\r\n"
 				+ "        <meta charset='UTF-8'>\r\n"
 				+ "        <meta name='viewport' content='width=device-width, initial-scale=1.0'>\r\n"
 				+ "        <title>GLoser</title>\r\n"
 				+ "\r\n"
-				+ "        <link rel='stylesheet' href='css/styless.css'>\r\n"
+				+ "        <link rel='stylesheet' href='css/styles1.css'>\r\n"
 				+ "\r\n"
 				+ "        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>\r\n"
 				+ "        <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>\r\n"
@@ -303,6 +306,7 @@ public class clineView  extends HttpServlet{
 				+ "        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>\r\n"
 				+ "        <script>\r\n"
 				+htmlTB
+			
 				+ "\r\n"
 				+ "var images = ['anh/kiquan1.jpg', 'anh/kiquan2.jpg', 'anh/kiquan3.jpg', 'anh/kiquan5.jpg',];\r\n"
 				+ "  $(function () {\r\n"
@@ -344,10 +348,11 @@ public class clineView  extends HttpServlet{
 				+ "                    <a href='#' class='nav__logo'><i class='bx bx-home-circle'></i></i></a>\r\n"
 				+ "                </div>\r\n"
 				+ "                <div class='thongbao' >\r\n"
-				+ "                 <a style='text-decoration: none' href='#bannerkhachsan' class='nav__link active'><i class='bx bx-home-circle'></i> Khách sạn</a>\r\n"
-				+ "                   <a  style='text-decoration: none' href='#Booking' class='nav__link dancach'><i class='bx bxs-plane' ></i> Chuyến bay</a>\r\n"
+				
+				+ "                   <a  style='text-decoration: none' href='#Booking' class='nav__link '><i class='bx bxs-plane' ></i> CHUYẾN BAY</a>\r\n"
 				+ "                    \r\n"
-				+ "                    <a style='text-decoration: none' href='#yasuo' class='nav__link'><i class='bx bx-heart-circle'></i> Ưu đãi</a>\r\n"
+				+ "                    <a style='text-decoration: none' href='#yasuo' class='nav__link dancach'><i class='bx bx-heart-circle'></i> ƯU ĐÃI</a>\r\n"
+				+ "                 <a style='text-decoration: none' href='#bannerkhachsan' class='nav__link active'><i class='bx bx-home-circle'></i> KHÁCH SẠN</a>\r\n"
 				+ "            </div>\r\n"
 				+ "\r\n"
 				+ "        \r\n"
@@ -376,7 +381,6 @@ public class clineView  extends HttpServlet{
 				+ "                \r\n"
 				+ "                        <a style='text-decoration: none ;color:#2f3569;'  class='' id='dangnhap1'><i class='bx bx-user font-weight-bold'></i> "+ten+"</a>\r\n"
 				+ "                        <a style='text-decoration: none;color:#2f3569'  class='dancach1 ' id='outtkbay1' ><i class='bx bxs-plane-alt font-weight-bold'></i> Chuyến bay</a>\r\n"
-				+ "                        <a style='text-decoration: none;color:#2f3569'  href='#bannerkhachsan'  id='dangnhap1' ><i class='bx bx-clinic font-weight-bold'></i> Khách sạn</a>\r\n"
 				+ "       \r\n"
 				+ "                    \r\n"
 				+ "                </div>\r\n"
@@ -539,26 +543,12 @@ public class clineView  extends HttpServlet{
 				+ "\r\n"
 				+ "    \r\n"
 				+ "            <main>\r\n"
-				+ "                <div class='home' style='background-color: #3ba8e0;'>\r\n"
-				+ "                    <div class='parallax home__parallax home__parallax-img1 nen' data-rellax-speed='-19' id='dvImage' >\r\n"
-				+ "                        \r\n"
-				+ "                    </div>\r\n"
-				+ "                    <div class='parallax home__parallax home__parallax-img2 may1' data-rellax-speed='-17' ></div>\r\n"
-				+ "                    <div class='parallax home__parallax home__parallax-img3 may2' data-rellax-speed='-15.5' ></div>\r\n"
-				+ "                 \r\n"
-				+ "                    <div class='parallax home__parallax home__parallax-img4 may3' data-rellax-speed='-13' >\r\n"
-				+ "                       \r\n"
-				+ "                    </div>\r\n"
-				+ "                    <div class='parallax home__parallax home__parallax-img5 maybay' data-rellax-speed='-10' >\r\n"
-				+ "                     \r\n"
-				+ "                       \r\n"
-				+ "\r\n"
-				+ "                    </div>\r\n"
-				+ "            \r\n"
+				+" <div class='home' style='background-color: #ffffff;'>"
+		
 				+ "                    <div class='tencty'>\r\n"
 				+ "                \r\n"
 				+ "\r\n"
-				+ "                    <h1 class='parallax home__title headerx' data-rellax-speed='-9'  >Gooolloser </h1>\r\n"
+				+ "                    <h1 class='parallax home__title headerx' data-rellax-speed='-5'  >Gooolloser </h1>\r\n"
 				+ "                   \r\n"
 				+ "                </div >\r\n"
 				+ "                    \r\n"
@@ -567,35 +557,20 @@ public class clineView  extends HttpServlet{
 				+ "                </div>\r\n"
 				+ "\r\n"
 				+ "\r\n"
-				+ "                                          <section class='container contact section header2' id='Booking' >\r\n"
-				+ "                                           \r\n"
-				+ "                                              \r\n"
-				+ "                                              <div class=' bd-grid ' id='myheader2'>\r\n"
-				+ "                                            <div class='wrapper bg-white ' >\r\n"
-				+ "                                                <form >\r\n"
-				+ "                                              \r\n"
-				+ "                                                    <div class='d-sm-flex margin border-bottom' >\r\n"
-				+ "                                                        \r\n"
-				+ "                                                        \r\n"
-				+ "                                                        <div class='d-flex p-2 align-items-center flex-fill ms-sm-1 my-sm-0 my-1   position-relative'> \r\n"
-				+ "                                                        </div>\r\n"
-				+ "                                                        <div>\r\n"
-				+ "                                                            <img src='anh/maybay.png' alt='' class='vietdu' data-speed=3>\r\n"
-				+ "                                                            \r\n"
-				+ "                                                        </div>\r\n"
-				+ "                                                        <div class='d-flex p-2 align-items-center flex-fill ms-sm-1 my-sm-0 my-1  position-relative '> \r\n"
-				+ "                                                        </div>\r\n"
-				+ "                                                      \r\n"
-				+ "                                                   \r\n"
-				+ "                                                   \r\n"
-				+ "                                                    <div class='form-group my-2 '>\r\n"
-				+ "                                            \r\n"
-				+ "                                                        <button type='button' class='btn  d-flex justify-content-center text-center  p-3 search' onclick='myFunction2()'  ><i class='bx bx-search-alt-2 search' style='font-size: 50px;'></i></button>          </div>                                            \r\n"
-				+ "                                                    </form>\r\n"
-				+ "                                                  \r\n"
-				+ "                                            </div>\r\n"
-				+ "                                        </div>\r\n"
-				+ "        \r\n"
+				+"           <section class='container ' id='Booking' >\r\n"
+				+ "                    <div style='padding-left: 30px;padding-top: 50px;'>\r\n"
+				+ "                    <h3>Tìm kiếm chuyến bay mà bạn muốn  <button type='button' class='btn  ' onclick='myFunction2()'  ><i class='bx bx-search-alt-2 search' style='font-size: 38px;'></i></button>    \r\n"
+				+ "\r\n"
+				+ "                    </h3>\r\n"
+				+ "                    <p>TÌM KIẾM NHỮNG CHUYẾN BAY VỚI NHỮNG MỨC GIÁ HẤP DẪN</p>\r\n"
+				+ "                \r\n"
+				+ "\r\n"
+				+ "                </div>\r\n"
+				+ "\r\n"
+				+ "                </section>"
+				
+				+ "                                          <section class='container contact section header2' >\r\n"
+		
 				+ "                                        <div class='container bannery  banner1 ' id='banner_id1' >\r\n"
 				+ "  \r\n"
 				+ "                                            \r\n"
@@ -615,16 +590,18 @@ public class clineView  extends HttpServlet{
 				+ "        \r\n"
 				+ "       \r\n"
 				+ "     \r\n"
-				+ "            <section class='yasuo' id='yasuo'>\r\n"
-				+ "                <br>\r\n"
-				+ "                \r\n"
-				+ "            </section>\r\n"
++"          <section class='container 'id ='yasuo' >\r\n"
++ "                <div style='padding-left: 30px;padding-top: 50px;'>\r\n"
++ "                <h1>Hãy làm theo cách mà bạn muốn</h1>\r\n"
++ "                <p>Chúng tôi luôn bên bạn<p>\r\n"
++ "            </div>\r\n"
++ "            </section>"
 				+ "\r\n"
 				+"      <section class='container   banner3 '  >\r\n"
 				+ "                <div id='myCarousel' class='carousel slide carousel-fade' data-ride='carousel'>\r\n"
 				+ "                    <div class='carousel-inner'>\r\n"
 				+ "                        <div class='carousel-item active'>\r\n"
-				+ "                            <div class='mask flex-center'>\r\n"
+				+ "                            <div class='mask flex-center'  style='background-image:url(css/animegif.gif);border-radius: 12px;'>\r\n"
 				+ "                                <div class='container'>\r\n"
 				+ "                                    <div class='row align-items-center'>\r\n"
 				+ "                                        <div class='col-md-7 col-12 order-md-1 order-2'>\r\n"
@@ -632,7 +609,7 @@ public class clineView  extends HttpServlet{
 				+ "                                            <h4>Mùa Hè</h4>\r\n"
 				+ "                                            <p>Chúng tôi sẽ đồng hành cùng gia đình bạn</p> <br> <a href='#Booking'>ĐẶT NGAY</a>\r\n"
 				+ "                                        </div>\r\n"
-				+ "                                        <div class='col-md-5 col-12 order-md-2 order-1'><img src='anh/bannerhe.png'class='mx-auto' alt='slide'></div>\r\n"
+				+ "                                        <div class='col-md-5 col-12 order-md-2 order-1'></div>\r\n"
 				+ "                                    </div>\r\n"
 				+ "                                </div>\r\n"
 				+ "                            </div>\r\n"
@@ -645,8 +622,14 @@ public class clineView  extends HttpServlet{
 				+ "           \r\n"
 				+ "         \r\n"
 				+ "        \r\n"
+				+"          <section class='container '  id ='bannerkhachsan' >\r\n"
+				+ "                <div style='padding-left: 30px;padding-top: 50px;'>\r\n"
+				+ "                <h1>Hãy nói cho chúng tôi</h1>\r\n"
+				+ "                <p>Nơi mà bạn muốn đến và chúng tôi sẽ tìm giúp bạn một chổ nghỉ chân<p>\r\n"
+				+ "            </div>\r\n"
+				+ "            </section>"
 				
-				+"            <section class='container  bannerx' id ='bannerkhachsan' >\r\n"
+				+"            <section class='container  bannerx' >\r\n"
 				+ "                <div class='container px-4  '>\r\n"
 				+ "                    <div class='row gx-2 '>\r\n"
 
@@ -971,9 +954,11 @@ public class clineView  extends HttpServlet{
 				+ "   \r\n"
 				+ "\r\n"
 				+ "    </body>\r\n"
-				+ "</html>");
+				+ "</html>";
 		
-		
+	pw.println(html);
+	System.out.println("-----------------------------------------------------------------------------------------");
+	System.out.println(html);
 			
 	}
 

@@ -27,21 +27,23 @@ public class htmlBanner {
 			String noidung = rs.getString(3);
 			String anh = rs.getString(4);
 			String loai = rs.getString(5);
+			String anhnen=rs.getString(6);
 	
 
-			htmlbn = htmlbn+"                    <div value='"+id+"' class='carousel-item '>\r\n"
-					+ "                            <div class='mask flex-center'>\r\n"
+			htmlbn = htmlbn+"                  <div value='"+id+"' class='carousel-item '\r\n>"
+					+ "                            <div class='mask flex-center'style='background-image:url("+anhnen+");border-radius: 12px;'>\r\n"
 					+ "                                <div class='container'>\r\n"
 					+ "                                    <div class='row align-items-center'>\r\n"
 					+ "                                        <div class='col-md-7 col-12 order-md-1 order-2'>\r\n"
 					+ "                                            <h4>"+tieude+"</h4>\r\n"
 					+ "                                            <p>"+noidung+"</p> <br> <a href='"+loai+"'>ĐẶT NGAY</a>\r\n"
 					+ "                                        </div>\r\n"
-					+ "                                        <div class='col-md-5 col-12 order-md-2 order-1'><img src='"+anh+"' class='mx-auto' alt='slide'></div>\r\n"
+					+ "                                        <div class='col-md-5 col-12 order-md-2 order-1'></br></br></div>\r\n"
 					+ "                                    </div>\r\n"
 					+ "                                </div>\r\n"
 					+ "                            </div>\r\n"
 					+ "                        </div>";
+			System.out.println(anhnen);
 		}
 	
 		

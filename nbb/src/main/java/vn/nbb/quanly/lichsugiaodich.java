@@ -29,7 +29,7 @@ public class lichsugiaodich  {
 				String idgiaodich = rs.getString(1);
 				String tenks = rs.getString(2);
 					
-				htmlgiaodich=htmlgiaodich+"mã thành toán : "+idgiaodich+" khách sạn : "+tenks+"";
+				htmlgiaodich=htmlgiaodich+"</br> mã thanh toán : "+idgiaodich+" khách sạn : "+tenks+"";
 					
 						
 					}

@@ -24,15 +24,18 @@ public class htmlThanhToan  {
 			System.out.print(ps);
 			int rows = ps.executeUpdate();
 			this.htmlThongbao="alert('Đặt phòng thành công')";
+			PreparedStatement ps1 = con.prepareStatement("UPDATE datphong SET soluong = soluong -1 WHERE tenks = '"+tenks+"'");
 			
+			int rs1 = ps1.executeUpdate();
 			
 		}
 
 		catch(Exception e)
 		{
-			this.htmlThongbao="alert('Bạn phải nhập đúng chứng minh nhân dân')";
-			e.printStackTrace();
+			this.htmlThongbao="alert('Bạn chưa nhập đúng chứng minh nhân dân hoặc chưa đăng nhập')";
+			
 		}
+		
 		}
 	}
 	public String getHtmlThongbao() {

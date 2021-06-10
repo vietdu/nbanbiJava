@@ -22,4 +22,8 @@
     <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
     <fullyQualifiedTypeName name="vn.nbb.quanly.htmlKhachsan"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="vn.nbb.quanly.htmlThanhToan"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="vn.nbb.quanly.lichsugiaodich"/>
 </qualifiedTypeNameHistroy>

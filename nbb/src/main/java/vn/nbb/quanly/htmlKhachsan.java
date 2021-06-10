@@ -22,7 +22,7 @@ public class htmlKhachsan {
 	try {
 		Connection con = connectdata.getCon();
 	
-		PreparedStatement ps = con.prepareStatement("SELECT datphong.id, datphong.tenks, datphong.gia, datphong.soluong ,khachsan.tieude, khachsan.vitri, khachsan.gioithieu FROM datphong INNER JOIN khachsan ON datphong.tenks = khachsan.tenks WHERE khachsan.vitri LIKE '%"+timdiadiem+"%'");
+		PreparedStatement ps = con.prepareStatement("SELECT datphong.id, datphong.tenks, datphong.gia, datphong.soluong ,khachsan.tieude, khachsan.vitri, khachsan.gioithieu FROM datphong INNER JOIN khachsan ON datphong.tenks = khachsan.tenks WHERE khachsan.vitri LIKE '%"+timdiadiem+"%' AND datphong.soluong > 0");
 		ResultSet rs = ps.executeQuery();
 		
 		
@@ -65,7 +65,7 @@ public class htmlKhachsan {
 					+ "          });";
 
 			htmlks = htmlks+" <div value='"+tenks+"' class='col hihi '>\r\n"
-					+ "                       <div class='p-1 border dulich bg-light '>\r\n"
+					+ "                       <div class='p-1  dulich  '>\r\n"
 					+ "\r\n"
 					+ "                        <div class='row  ' >\r\n"
 					+ "                            <div class='col-sm anhdulich '>\r\n"
