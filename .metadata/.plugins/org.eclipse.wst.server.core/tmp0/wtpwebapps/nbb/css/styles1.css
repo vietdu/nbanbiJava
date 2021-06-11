@@ -120,7 +120,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #3ba8e0;
+  background-color: #aacfc2;
   z-index: 2000;
 }
 
@@ -182,12 +182,15 @@ img {
 
 .nav__logo {
   padding-left: 20px;
-  font-size: 30px;
+
+  font-size: 24px;
+  font-weight: 20;
  
 }
 
 .nav__link {
-  color: #ffffff;
+  color: #080a13;
+  font-weight: 20;
 }
 
 .nav__link:hover {
@@ -229,12 +232,12 @@ img {
 }
 
 .home__parallax-img2 {
-  background-image: url("back.png");
+  background-image: url("background1.png");
   z-index: var(--z-tooltip);
 }
 
 .home__parallax-img3 {
-  background-image: url("anh3.png");
+  background-image: url("background2.png");
   z-index: var(--z-fixed);
 }
 
@@ -262,14 +265,14 @@ img {
 }
 
 .home__title {
-  font-size: 48px;
+  font-size: 68px;
   z-index: var(--z-normal);
   color:#c1c9da;
 
 }
 .home__title {
-  top: 30%;
-  left:41.8%;
+  top: 40%;
+  left:10%;
 }
 
 
@@ -280,8 +283,11 @@ img {
 }
 
 .home__subtitle {
-  top: 50%;
-  font-size: var(--h2-font-size);
+  color: #000;
+  top: 55%;
+  left: 10%;
+  font-size: 34px;
+  font-weight: bold;
  
   z-index: var(--z-fixed);
  
@@ -625,7 +631,7 @@ margin-bottom: 2%;
 .chungtoi {
   margin-top: 10%;
   padding-top: 5%;
-  background-color:#43485b ;
+  background-color:#09011f ;
 }
 
 .header2{
@@ -839,11 +845,7 @@ display: none;
  .bannery{
    height:500px;
  }
-.home__title{
-  top:8%;
-  left:30%;
 
-}
 .header2{
   height: auto;
 }
@@ -1258,13 +1260,7 @@ input:focus {
     -webkit-transform: scale(0.98);
             transform: scale(0.98);
   }
-  .home__title{
-    font-size: 38px;
-  
-      top: 32%;
-      left:42.2%;
-    
-  }
+
 
 }
 
@@ -1291,7 +1287,7 @@ input:focus {
   }
   .fl-wrap {
     float: left;
-    width: 290%;
+    width: 280%;
     position: relative
   }
   .thequan{
@@ -1322,20 +1318,23 @@ input:focus {
 
     margin-right:0px;
   }
+  .home__subtitle{
+    top: 63%;
+  }
   .home__title{
-    font-size: 38px;
+    font-size: 68px;
   
-      top: 32%;
-      left:28.5%;
+      top: 50%;
+      left:10%;
     
   }
   .fl-wrap {
     float: left;
-    width: 120px;
+    width: 200px;
     position: relative
   }
   .nuttk{
-    width:120px;
+    width:200px;
   }
   .quan{
     width: auto;
@@ -1650,7 +1649,7 @@ margin-left: auto;
 	background-image:-webkit-linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	-webkit-animation: hue 40s infinite linear;
+	-webkit-animation: hue 20s infinite linear;
 }
 
 @-webkit-keyframes hue {

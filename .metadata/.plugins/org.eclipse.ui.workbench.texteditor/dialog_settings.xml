@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Gooo"/>
+		<item key="selection" value="Nơi mà bạn muốn đến"/>
 		<list key="findhistory">
-			<item value="gooo"/>
-			<item value="goo"/>
-			<item value="húng tôi luôn bên bạn"/>
-			<item value=" giúp bạn một chổ nghỉ chân"/>
-			<item value="tìm kiếm"/>
-			<item value="banner1"/>
-			<item value="search"/>
-			<item value="header2"/>
-			<item value="MAYBAY"/>
-			<item value="khách sạn"/>
-			<item value="htmlBay"/>
-			<item value=".banner3 #myCarousel h4 {"/>
-			<item value="bannerx"/>
-			<item value="banner3"/>
-			<item value="htmlbn"/>
+			<item value="Nơi mà bạn muốn đến"/>
+			<item value="headerx"/>
+			<item value="home__title"/>
+			<item value="styles8"/>
+			<item value="home"/>
+			<item value="img3"/>
+			<item value="styles6"/>
+			<item value="style6"/>
+			<item value="style"/>
+			<item value="home__parallax-img2"/>
+			<item value="main"/>
+			<item value="styles5"/>
+			<item value="nav"/>
+			<item value="nav-lo"/>
+			<item value="nav-logo"/>
 		</list>
 		<list key="replacehistory">
 		</list>
