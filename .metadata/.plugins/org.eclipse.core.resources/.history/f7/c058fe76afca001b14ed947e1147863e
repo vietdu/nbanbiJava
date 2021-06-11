@@ -297,7 +297,7 @@ public class clineView  extends HttpServlet{
 				+ "        <meta name='viewport' content='width=device-width, initial-scale=1.0'>\r\n"
 				+ "        <title>GLoser</title>\r\n"
 				+ "\r\n"
-				+ "        <link rel='stylesheet' href='css/styles2.css'>\r\n"
+				+ "        <link rel='stylesheet' href='css/styles1.css'>\r\n"
 				+ "\r\n"
 				+ "        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>\r\n"
 				+ "        <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>\r\n"
