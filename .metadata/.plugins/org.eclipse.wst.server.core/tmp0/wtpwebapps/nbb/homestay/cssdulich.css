@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+.mauxanh {
+    color: #57ac42
+}
+
+.pic {
+    height: 70px;
+    width: 70px;
+    
+    border-radius: 12px
+}
+
+.photo {
+
+    border-radius: 12px;
+    padding: 5px
+}
+
+ .textmuted{
+    color: #797878;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.btn.btn-primary {
+    background-color: white;
+    border: 1px solid #ddd;
+    color: #57ac42;
+    font-weight: 200
+}
+
+.btn.btn-primary:hover {
+    background-color: #57ac423f;
+    color: white;
+    border: 1px solid transparent
+}
+
+input::placeholder {
+    font-size: 13px;
+    padding-left: 5px
+}
+
+input[type="text"] {
+    border: 1px solid #ddd;
+    outline: none
+}
+
+.btn.btn-green {
+    background-color: #57ac42;
+    color: white;
+    font-size: .8rem;
+    border: none;
+    border-radius: 0
+}
+
+.btn.btn-green:hover {
+    background-color: #9cdf8c;
+    color: white
+}
+
+.nav.nav-tabs .nav-item .nav-link {
+    color: #57ac42
+}
+
+.nav.nav-tabs .nav-item .nav-link:hover {
+    background-color: #9cdf8c;
+    color: white
+}
+.dungyen{
+  position: fixed;
+  top: 0;
+  right:0;
+
+}
+
+.baiviet{
+  margin-top:40px;
+
+}
+@media screen and (max-width : 600px){
+  .dungyen{
+   display:none;
+  }
+}
+
+.thechon{
+  cursor: pointer;
+}
+.thechon:hover{
+  background-color:rgba(153, 205, 50, 0.61);
+  border-radius: 12px;
+}
+.vungbien{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top:20px;
+    padding-right: 40px;
+    background-color: #dee1e62f;
+    border-radius: 12px;
+    text-align: justify;
+}
+
+.songdong{
+  text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-top:40px;
+    padding-right: 40px;
+    background-color: #dee1e62f;
+    border-radius: 12px;
+  
+  }
+  
+  .vungnui{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-top:40px;
+    padding-right: 40px;
+    background-color: #dee1e62f;
+    border-radius: 12px;text-align: justify;
+  }
+  .yentinh{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    margin-top:40px;
+    background-color: #dee1e62f;
+    border-radius: 12px;
+    margin-bottom: 320px;
+    text-align: justify;
+  }
+  .showvungbien{
+  
+  }
+  .showsongdong{
+  
+  }
+  
+  .showvungnui{
+  
+  }
+  
+  .showyentinh{
+  
+  }
+
+  .headerx {
+
+    margin-top: 10px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+ 
+    font-weight: 160px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #f35626;
+    background-image:-webkit-linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 20s infinite linear;
+  }
+  
+  @-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+  }
+

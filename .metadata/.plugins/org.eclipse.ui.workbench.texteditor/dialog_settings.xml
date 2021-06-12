@@ -6,25 +6,26 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Nơi mà bạn muốn đến"/>
+		<item key="selection" value="trangchu"/>
 		<list key="findhistory">
+			<item value="index.html"/>
+			<item value="vùng biển"/>
+			<item value="mùa hè"/>
+			<item value="anime"/>
+			<item value="tìm kiếm"/>
+			<item value="hiểu thêm"/>
+			<item value="tìm hiểu thêm"/>
+			<item value="đồng hành"/>
+			<item value="nói cho "/>
+			<item value="nơi mà bạn"/>
+			<item value="ưu đãi"/>
+			<item value="styles1"/>
+			<item value="banner1"/>
 			<item value="Nơi mà bạn muốn đến"/>
 			<item value="headerx"/>
-			<item value="home__title"/>
-			<item value="styles8"/>
-			<item value="home"/>
-			<item value="img3"/>
-			<item value="styles6"/>
-			<item value="style6"/>
-			<item value="style"/>
-			<item value="home__parallax-img2"/>
-			<item value="main"/>
-			<item value="styles5"/>
-			<item value="nav"/>
-			<item value="nav-lo"/>
-			<item value="nav-logo"/>
 		</list>
 		<list key="replacehistory">
+			<item value="trangchu"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

@@ -36,7 +36,7 @@ public class htmlBanner {
 					+ "                                    <div class='row align-items-center'>\r\n"
 					+ "                                        <div class='col-md-7 col-12 order-md-1 order-2'>\r\n"
 					+ "                                            <h4>"+tieude+"</h4>\r\n"
-					+ "                                            <p>"+noidung+"</p> <br> <a href='"+loai+"'>ĐẶT NGAY</a>\r\n"
+					+ "                                            <p>"+noidung+"</p> <br> <a href='"+loai+"'>Tìm hiểu thêm</a>\r\n"
 					+ "                                        </div>\r\n"
 					+ "                                        <div class='col-md-5 col-12 order-md-2 order-1'></br></br></div>\r\n"
 					+ "                                    </div>\r\n"
