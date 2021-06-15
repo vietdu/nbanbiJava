@@ -159,7 +159,7 @@ public class clineView  extends HttpServlet{
 						String mail =rs.getString(2);
 						this.maildn=mail;
 						Cookie coki = new Cookie("du", id);
-						coki.setMaxAge(200);
+						coki.setMaxAge(100);
 
 						System.out.println("=============================================");
 						System.out.println(coki.getName());

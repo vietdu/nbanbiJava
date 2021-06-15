@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="trangchu"/>
+		<item key="selection" value="Cookie"/>
 		<list key="findhistory">
+			<item value="cookie"/>
 			<item value="index.html"/>
 			<item value="vùng biển"/>
 			<item value="mùa hè"/>
@@ -22,7 +23,6 @@
 			<item value="styles1"/>
 			<item value="banner1"/>
 			<item value="Nơi mà bạn muốn đến"/>
-			<item value="headerx"/>
 		</list>
 		<list key="replacehistory">
 			<item value="trangchu"/>
