@@ -43,6 +43,7 @@ public class clineView  extends HttpServlet{
 		resp.setContentType("text/html;charset=UTF-8");
 		req.setCharacterEncoding("UTF-8");
 		resp.setCharacterEncoding("UTF-8");
+
 		
 		
 		
